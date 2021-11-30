@@ -30,6 +30,86 @@
           "status": "notstarted"
         },
         {
+          "id": "1-2-3",
+          "title": "global_indicators.1-2-3-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-2-3",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-4",
+          "title": "global_indicators.1-2-4-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-2-4",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-5",
+          "title": "global_indicators.1-2-5-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-2-5",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-6",
+          "title": "global_indicators.1-2-6-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-2-6",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-7",
+          "title": "global_indicators.1-2-7-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-2-7",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-8",
+          "title": "global_indicators.1-2-8-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-2-8",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-9",
+          "title": "global_indicators.1-2-9-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-2-9",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-10",
+          "title": "global_indicators.1-2-10-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-2-10",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-11",
+          "title": "global_indicators.1-2-11-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-2-11",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-12",
+          "title": "global_indicators.1-2-12-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-2-12",
+          "status": "complete"
+        },
+        {
           "id": "1-3-1",
           "title": "Proporción de la población cubierta por sistemas o niveles mínimos de protección social, desglosada por sexo, distinguiendo entre los niños, los desempleados, los ancianos, las personas con discapacidad, las mujeres embarazadas, los recién nacidos, las víctimas de accidentes de trabajo, los pobres y los vulnerables",
           "description": "",
@@ -100,6 +180,22 @@
           "keywords": "",
           "href": "/site/es/1-a-2",
           "status": "notstarted"
+        },
+        {
+          "id": "1-a-3",
+          "title": "Suma del total de las subvenciones y asignaciones no generadoras de deuda dedicadas directamente a programas de reducción de la pobreza en proporción al PIB",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-a-3",
+          "status": "complete"
+        },
+        {
+          "id": "1-a-4",
+          "title": "global_indicators.1-a-4-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/es/1-a-4",
+          "status": "complete"
         },
         {
           "id": "1-b-1",

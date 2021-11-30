@@ -30,6 +30,86 @@
           "status": "notstarted"
         },
         {
+          "id": "1-2-3",
+          "title": "global_indicators.1-2-3-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-2-3",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-4",
+          "title": "global_indicators.1-2-4-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-2-4",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-5",
+          "title": "global_indicators.1-2-5-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-2-5",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-6",
+          "title": "global_indicators.1-2-6-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-2-6",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-7",
+          "title": "global_indicators.1-2-7-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-2-7",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-8",
+          "title": "global_indicators.1-2-8-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-2-8",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-9",
+          "title": "global_indicators.1-2-9-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-2-9",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-10",
+          "title": "global_indicators.1-2-10-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-2-10",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-11",
+          "title": "global_indicators.1-2-11-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-2-11",
+          "status": "complete"
+        },
+        {
+          "id": "1-2-12",
+          "title": "global_indicators.1-2-12-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-2-12",
+          "status": "complete"
+        },
+        {
           "id": "1-3-1",
           "title": "Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable",
           "description": "",
@@ -100,6 +180,22 @@
           "keywords": "",
           "href": "/site/1-a-2",
           "status": "notstarted"
+        },
+        {
+          "id": "1-a-3",
+          "title": "Sum of total grants and non-debt-creating inflows directly allocated to poverty reduction programmes as a proportion of GDP",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-a-3",
+          "status": "complete"
+        },
+        {
+          "id": "1-a-4",
+          "title": "global_indicators.1-a-4-title",
+          "description": "",
+          "keywords": "",
+          "href": "/site/1-a-4",
+          "status": "complete"
         },
         {
           "id": "1-b-1",
