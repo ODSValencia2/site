@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="ca" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://odsvalencia2.github.io/data/en',
+  remoteDataBaseUrl: 'https://odsvalencia2.github.io/data/ca',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'ca',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Goal 14 - Life below water - Indicators For The Sustainable Development Goals</title>
+    <title>Objectiu 14 - La vida sota l&#39;aigua - Indicadors per als objectius de desenvolupament sostenible</title>
 
 
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211130091426">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211130153417">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -147,21 +147,21 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-ca
 layout-goal-by-target-vertical
 ">
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contrast per defecte","disable_high_contrast":"Desactiva l’alt contrast","disclaimer":"Es tracta d’un lloc web de desenvolupament. Agraïm els vostres comentaris <a href=\"mailto:%email_address\"> </a>.","enable_high_contrast":"Activa el contrast elevat","high_contrast":"Contrast alt","skip_link":"Vés al contingut principal","tag_line":"17 objectius per transformar el nostre món","toggle_menu":"Commuta el menú. Feu clic per expandir o reduir el menú.","toggle_search":"Canvia de cerca. Feu clic per expandir o reduir la barra de cerca."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Vés al contingut principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Es tracta d’un lloc web de desenvolupament. Agraïm els vostres comentaris <a href="mailto:test@example.com"> </a>.
   </div>
 </div>
 
@@ -172,15 +172,15 @@ layout-goal-by-target-vertical
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/site/" id="home">
-    <img src="/site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/site/assets/img/SDG_logo.png" alt="Objectius de desenvolupament sostenible - 17 objectius per transformar el nostre món" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'>
         
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -191,8 +191,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -209,8 +209,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/14/">
               Español
@@ -225,9 +225,9 @@ data-event-label="high"
     <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
   <form action="/site/search/">
-    <label class="sr-only" for="indicator_search">Search</label>
-    <input type="text" name="q" id="indicator_search" title="Search" /><!--
-    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search">Cerca</label>
+    <input type="text" name="q" id="indicator_search" title="Cerca" /><!--
+    --><button aria-label="Cerca" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -243,8 +243,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/14/">
               Español
@@ -258,8 +258,8 @@ data-event-label="high"
         </li>
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -270,8 +270,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -290,19 +290,19 @@ data-event-label="high"
     <div class="navbar navbar-default menu-without-widgets" id="main-nav">
       <ul class="top-level">
     <li id="menuToggle"
-        aria-label="Menu toggle. Click to expand or collapse the menu."
+        aria-label="Commuta el menú. Feu clic per expandir o reduir el menú."
         aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+        <button data-target="menu-mobile" aria-expanded="false">Menú</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/site/goals">Goals</a>
+    <a href="/site/goals">Metes</a>
 </li><li class="nav-link ">
-    <a href="/site/reporting-status">Reporting Status</a>
+    <a href="/site/reporting-status">Estat de l'informe</a>
 </li><li class="nav-link ">
-    <a href="/site/about">About</a>
+    <a href="/site/about">Quant a</a>
 </li><li class="nav-link ">
-    <a href="/site/faq">FAQ</a>
+    <a href="/site/faq">PMF</a>
 </li><li class="nav-link ">
-    <a href="/site/news">Updates</a>
+    <a href="/site/news">Novetats</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -314,8 +314,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/14/">
               Español
@@ -331,8 +331,8 @@ data-event-label="high"
 
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -343,8 +343,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -361,29 +361,29 @@ data-event-label="high"
 
     </li>
     <li id="searchToggle"
-        aria-label="Search toggle. Click to expand or collapse the search bar."
+        aria-label="Canvia de cerca. Feu clic per expandir o reduir la barra de cerca."
         aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Search</button>
+        <button data-target="search-mobile" aria-expanded="false">Cerca</button>
         <div id="search-mobile" class="menu-target">
   <form action="/site/search/">
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
-    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search-mobile">Cerca</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Cerca" /><!--
+    --><button aria-label="Cerca" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
     </li>
 </ul>
       <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/site/goals">Goals</a>
+    <a href="/site/goals">Metes</a>
 </li><li class="nav-link ">
-    <a href="/site/reporting-status">Reporting Status</a>
+    <a href="/site/reporting-status">Estat de l'informe</a>
 </li><li class="nav-link ">
-    <a href="/site/about">About</a>
+    <a href="/site/about">Quant a</a>
 </li><li class="nav-link ">
-    <a href="/site/faq">FAQ</a>
+    <a href="/site/faq">PMF</a>
 </li><li class="nav-link ">
-    <a href="/site/news">Updates</a>
+    <a href="/site/news">Novetats</a>
 </li>
 
 </ul>
@@ -401,8 +401,8 @@ data-event-label="high"
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/site/">Home</a></li>
-  <li><a href="/site/goals">Goals</a></li>
+  <li><a href="/site/">Inici</a></li>
+  <li><a href="/site/goals">Metes</a></li>
   
   
 </ol>
@@ -414,11 +414,11 @@ data-event-label="high"
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/14.png" alt="Life below water - Goal 14" id="goal-14" class="goal-icon-image goal-icon-image-" />
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ca/14.png" alt="La vida sota l&#39;aigua - Objectiu 14" id="goal-14" class="goal-icon-image goal-icon-image-" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 14: </span>Conserve and sustainably use the oceans, seas and marine resources for sustainable development
+          <span class="hidden-sm hidden-md hidden-lg">Objectiu 14: </span>Conservar i utilitzar de manera sostenible els oceans, els mars i els recursos marins per al desenvolupament sostenible
         </h1>
       </div>
     </div>
@@ -433,16 +433,16 @@ data-event-label="high"
 
 
   <div class="container">
-    <h2>Targets and indicators</h2>
+    <h2>Objectius i indicadors</h2>
 
     
     
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 14.1</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 14.1</span>
         </h3>
-        <span class="target-name">By 2025, prevent and significantly reduce marine pollution of all kinds, in particular from land-based activities, including marine debris and nutrient pollution</span>
+        <span class="target-name">El 2025, prevenir i reduir significativament la contaminació marina de tota mena, en particular per activitats terrestres, incloses la contaminació de deixalles i nutrients</span>
         
 
           
@@ -451,17 +451,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 14.1.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 14.1.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/14-1-1">(a) Index of coastal eutrophication; and (b) plastic debris density</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/14-1-1">Índex d'eutrofització costanera i densitat de detritus plàstics flotants</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -479,9 +479,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 14.2</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 14.2</span>
         </h3>
-        <span class="target-name">By 2020, sustainably manage and protect marine and coastal ecosystems to avoid significant adverse impacts, including by strengthening their resilience, and take action for their restoration in order to achieve healthy and productive oceans</span>
+        <span class="target-name">El 2020, gestionar i protegir de manera sostenible els ecosistemes marins i costaners per evitar impactes adversos significatius, inclòs reforçant la seva resistència, i prendre mesures per a la seva restauració per aconseguir oceans sans i productius.</span>
         
 
           
@@ -490,17 +490,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 14.2.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 14.2.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/14-2-1">Number of countries using ecosystem-based approaches to managing marine areas</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/14-2-1">Proporció de zones econòmiques exclusives nacionals gestionades mitjançant enfocaments basats en els ecosistemes</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -518,9 +518,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 14.3</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 14.3</span>
         </h3>
-        <span class="target-name">Minimize and address the impacts of ocean acidification, including through enhanced scientific cooperation at all levels</span>
+        <span class="target-name">Minimitzar i abordar els impactes de l'acidificació dels oceans, fins i tot mitjançant una cooperació científica millorada a tots els nivells</span>
         
 
           
@@ -529,17 +529,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 14.3.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 14.3.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/14-3-1">Average marine acidity (pH) measured at agreed suite of representative sampling stations</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/14-3-1">Acidesa mitjana de la mar (pH) mesura en un conjunt convingut d'estacions de mostreig representatives</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -557,9 +557,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 14.4</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 14.4</span>
         </h3>
-        <span class="target-name">By 2020, effectively regulate harvesting and end overfishing, illegal, unreported and unregulated fishing and destructive fishing practices and implement science-based management plans, in order to restore fish stocks in the shortest time feasible, at least to levels that can produce maximum sustainable yield as determined by their biological characteristics</span>
+        <span class="target-name">Per al 2020, regular de manera efectiva la recol·lecció i acabar amb la sobrepesca, la pesca il·legal, no declarada i no regulada i les pràctiques de pesca destructiva i implementar plans de gestió basats en la ciència, per tal de restaurar les poblacions de peixos en el menor temps possible, almenys a nivells que puguin produir el màxim rendiment sostenible determinat per les seves característiques biològiques</span>
         
 
           
@@ -568,17 +568,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 14.4.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 14.4.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/14-4-1">Proportion of fish stocks within biologically sustainable levels</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/14-4-1">Proporció de poblacions de peixos els nivells dels quals són biològicament sostenibles</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -596,9 +596,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 14.5</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 14.5</span>
         </h3>
-        <span class="target-name">By 2020, conserve at least 10 per cent of coastal and marine areas, consistent with national and international law and based on the best available scientific information</span>
+        <span class="target-name">El 2020 es conservarà almenys el 10% de les zones costaneres i marines, d'acord amb la legislació nacional i internacional i basant-se en la millor informació científica disponible.</span>
         
 
           
@@ -607,17 +607,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 14.5.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 14.5.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/14-5-1">Coverage of protected areas in relation to marine areas</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/14-5-1">Cobertura de les zones protegides en relació amb les zones marines</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -635,9 +635,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 14.6</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 14.6</span>
         </h3>
-        <span class="target-name">By 2020, prohibit certain forms of fisheries subsidies which contribute to overcapacity and overfishing, eliminate subsidies that contribute to illegal, unreported and unregulated fishing and refrain from introducing new such subsidies, recognizing that appropriate and effective special and differential treatment for developing and least developed countries should be an integral part of the World Trade Organization fisheries subsidies negotiation</span>
+        <span class="target-name">El 2020, prohibiu certes formes de subvencions a la pesca que contribueixen a la sobrecapacitat i a la sobrepesca, elimineu les subvencions que contribueixin a la pesca il·legal, no declarada i no regulada i abstingueu-vos d’introduir noves subvencions d’aquest tipus, reconeixent un tracte especial i diferencial adequat i eficaç per als països en desenvolupament i els menys desenvolupats. hauria de ser una part integral de la negociació de subvencions a la pesca de l'Organització Mundial del Comerç</span>
         
 
           
@@ -646,17 +646,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 14.6.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 14.6.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/14-6-1">Degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/14-6-1">Progressos realitzats pels països en el grau d'aplicació dels instruments internacionals l'objectiu dels quals és combatre la pesca il·legal, no declarada i no reglamentada</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -674,9 +674,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 14.7</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 14.7</span>
         </h3>
-        <span class="target-name">By 2030, increase the economic benefits to small island developing States and least developed countries from the sustainable use of marine resources, including through sustainable management of fisheries, aquaculture and tourism</span>
+        <span class="target-name">Per al 2030, augmentar els beneficis econòmics per als petits estats insulars en desenvolupament i els països menys desenvolupats a partir de l’ús sostenible dels recursos marins, fins i tot mitjançant una gestió sostenible de la pesca, l’aqüicultura i el turisme</span>
         
 
           
@@ -685,17 +685,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 14.7.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 14.7.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/14-7-1">Sustainable fisheries as a proportion of GDP in small island developing States, least developed countries and all countries</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/14-7-1">Proporció del PIB corresponent a la pesca sostenible en els petits Estats insulars en desenvolupament, als països menys avançats i en tots els països</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -713,9 +713,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 14.a</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 14.a</span>
         </h3>
-        <span class="target-name">Increase scientific knowledge, develop research capacity and transfer marine technology, taking into account the Intergovernmental Oceanographic Commission Criteria and Guidelines on the Transfer of Marine Technology, in order to improve ocean health and to enhance the contribution of marine biodiversity to the development of developing countries, in particular small island developing States and least developed countries</span>
+        <span class="target-name">Incrementar el coneixement científic, desenvolupar la capacitat de recerca i transferir tecnologia marina, tenint en compte els criteris i directrius de la Comissió Oceanogràfica Intergovernamental sobre la Transferència de Tecnologia Marina, per tal de millorar la salut oceànica i millorar la contribució de la biodiversitat marina al desenvolupament dels països en desenvolupament. en particular, els petits estats insulars en desenvolupament i els països menys desenvolupats</span>
         
 
           
@@ -724,17 +724,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 14.a.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 14.a.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/14-a-1">Proportion of total research budget allocated to research in the field of marine technology</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/14-a-1">Proporció del pressupost total de recerca assignada a la recerca en el camp de la tecnologia marina</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -752,9 +752,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 14.b</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 14.b</span>
         </h3>
-        <span class="target-name">Provide access for small-scale artisanal fishers to marine resources and markets</span>
+        <span class="target-name">Proporcionar accés als pescadors artesanals a petita escala als recursos i mercats marins</span>
         
 
           
@@ -763,17 +763,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 14.b.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 14.b.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/14-b-1">Degree of application of a legal/regulatory/ policy/institutional framework which recognizes and protects access rights for small-scale fisheries</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/14-b-1">Progressos realitzats pels països en el grau d'aplicació d'un marc jurídic, reglamentari, normatiu o institucional que reconegui i protegeixi els drets d'accés per a la pesca en petita escala</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -791,9 +791,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 14.c</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 14.c</span>
         </h3>
-        <span class="target-name">Enhance the conservation and sustainable use of oceans and their resources by implementing international law as reflected in the United Nations Convention on the Law of the Sea, which provides the legal framework for the conservation and sustainable use of oceans and their resources, as recalled in paragraph 158 of “The future we want”</span>
+        <span class="target-name">Millorar la conservació i l’ús sostenible dels oceans i els seus recursos mitjançant la implementació del dret internacional tal com es reflecteix a la Convenció de les Nacions Unides sobre el Dret del Mar, que proporciona el marc legal per a la conservació i l’ús sostenible dels oceans i els seus recursos, tal com es recorda al paràgraf. 158 de "El futur que volem"</span>
         
 
           
@@ -802,17 +802,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 14.c.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 14.c.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/14-c-1">Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the United Nations Convention on the Law of the Sea, for the conservation and sustainable use of the oceans and their resources</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/14-c-1">Nombre de països que, mitjançant marcs jurídicos, normatius i institucionals, avancen en la ratificació, l'acceptació i la implementació dels instruments relacionats amb els oceans que apliquen el dret internacional reflectit en la Convenció de les Nacions Unides sobre el Dret de la Mar per a la conservació i l'ús sostenible dels oceans i els seus recursos</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -836,10 +836,10 @@ data-event-label="high"
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construït amb Open SDG</a></li>
             
               <li>
-                <a href="/site/contact-us">Contact us</a>
+                <a href="/site/contact-us">Contacta'ns</a>
                 
                 </li>
               <li>
@@ -853,7 +853,7 @@ data-event-label="high"
                 
                 </li>
               <li>
-                <a href="/site/about/cookies-and-privacy/">Cookies</a>
+                <a href="/site/about/cookies-and-privacy/">Galetes</a>
                 
                 </li>
               
@@ -888,17 +888,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'amagar-se';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Cerca';</script>
 
-<script src='/site/assets/js/sdg.js?v=20211130091426'></script>
+<script src='/site/assets/js/sdg.js?v=20211130153417'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20211130091426"></script><script>
+    <script src="/site/assets/js/custom.js?v=20211130153417"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="ca" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://odsvalencia2.github.io/data/en',
+  remoteDataBaseUrl: 'https://odsvalencia2.github.io/data/ca',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'ca',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Goal 8 - Decent jobs and economic growth - Indicators For The Sustainable Development Goals</title>
+    <title>Objectiu 8 - Feines dignes i creixement econòmic - Indicadors per als objectius de desenvolupament sostenible</title>
 
 
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211130091426">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211130153417">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -147,21 +147,21 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-ca
 layout-goal-by-target-vertical
 ">
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contrast per defecte","disable_high_contrast":"Desactiva l’alt contrast","disclaimer":"Es tracta d’un lloc web de desenvolupament. Agraïm els vostres comentaris <a href=\"mailto:%email_address\"> </a>.","enable_high_contrast":"Activa el contrast elevat","high_contrast":"Contrast alt","skip_link":"Vés al contingut principal","tag_line":"17 objectius per transformar el nostre món","toggle_menu":"Commuta el menú. Feu clic per expandir o reduir el menú.","toggle_search":"Canvia de cerca. Feu clic per expandir o reduir la barra de cerca."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Vés al contingut principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Es tracta d’un lloc web de desenvolupament. Agraïm els vostres comentaris <a href="mailto:test@example.com"> </a>.
   </div>
 </div>
 
@@ -172,15 +172,15 @@ layout-goal-by-target-vertical
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/site/" id="home">
-    <img src="/site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/site/assets/img/SDG_logo.png" alt="Objectius de desenvolupament sostenible - 17 objectius per transformar el nostre món" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'>
         
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -191,8 +191,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -209,8 +209,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/8/">
               Español
@@ -225,9 +225,9 @@ data-event-label="high"
     <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
   <form action="/site/search/">
-    <label class="sr-only" for="indicator_search">Search</label>
-    <input type="text" name="q" id="indicator_search" title="Search" /><!--
-    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search">Cerca</label>
+    <input type="text" name="q" id="indicator_search" title="Cerca" /><!--
+    --><button aria-label="Cerca" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -243,8 +243,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/8/">
               Español
@@ -258,8 +258,8 @@ data-event-label="high"
         </li>
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -270,8 +270,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -290,19 +290,19 @@ data-event-label="high"
     <div class="navbar navbar-default menu-without-widgets" id="main-nav">
       <ul class="top-level">
     <li id="menuToggle"
-        aria-label="Menu toggle. Click to expand or collapse the menu."
+        aria-label="Commuta el menú. Feu clic per expandir o reduir el menú."
         aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+        <button data-target="menu-mobile" aria-expanded="false">Menú</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/site/goals">Goals</a>
+    <a href="/site/goals">Metes</a>
 </li><li class="nav-link ">
-    <a href="/site/reporting-status">Reporting Status</a>
+    <a href="/site/reporting-status">Estat de l'informe</a>
 </li><li class="nav-link ">
-    <a href="/site/about">About</a>
+    <a href="/site/about">Quant a</a>
 </li><li class="nav-link ">
-    <a href="/site/faq">FAQ</a>
+    <a href="/site/faq">PMF</a>
 </li><li class="nav-link ">
-    <a href="/site/news">Updates</a>
+    <a href="/site/news">Novetats</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -314,8 +314,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/8/">
               Español
@@ -331,8 +331,8 @@ data-event-label="high"
 
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -343,8 +343,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -361,29 +361,29 @@ data-event-label="high"
 
     </li>
     <li id="searchToggle"
-        aria-label="Search toggle. Click to expand or collapse the search bar."
+        aria-label="Canvia de cerca. Feu clic per expandir o reduir la barra de cerca."
         aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Search</button>
+        <button data-target="search-mobile" aria-expanded="false">Cerca</button>
         <div id="search-mobile" class="menu-target">
   <form action="/site/search/">
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
-    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search-mobile">Cerca</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Cerca" /><!--
+    --><button aria-label="Cerca" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
     </li>
 </ul>
       <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/site/goals">Goals</a>
+    <a href="/site/goals">Metes</a>
 </li><li class="nav-link ">
-    <a href="/site/reporting-status">Reporting Status</a>
+    <a href="/site/reporting-status">Estat de l'informe</a>
 </li><li class="nav-link ">
-    <a href="/site/about">About</a>
+    <a href="/site/about">Quant a</a>
 </li><li class="nav-link ">
-    <a href="/site/faq">FAQ</a>
+    <a href="/site/faq">PMF</a>
 </li><li class="nav-link ">
-    <a href="/site/news">Updates</a>
+    <a href="/site/news">Novetats</a>
 </li>
 
 </ul>
@@ -401,8 +401,8 @@ data-event-label="high"
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/site/">Home</a></li>
-  <li><a href="/site/goals">Goals</a></li>
+  <li><a href="/site/">Inici</a></li>
+  <li><a href="/site/goals">Metes</a></li>
   
   
 </ol>
@@ -414,11 +414,11 @@ data-event-label="high"
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/8.png" alt="Decent jobs and economic growth - Goal 8" id="goal-8" class="goal-icon-image goal-icon-image-" />
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ca/8.png" alt="Feines dignes i creixement econòmic - Objectiu 8" id="goal-8" class="goal-icon-image goal-icon-image-" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 8: </span>Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all
+          <span class="hidden-sm hidden-md hidden-lg">Objectiu 8: </span>Promoure un creixement econòmic sostingut, inclusiu i sostenible, una ocupació plena i productiva i un treball digne per a tothom
         </h1>
       </div>
     </div>
@@ -433,16 +433,16 @@ data-event-label="high"
 
 
   <div class="container">
-    <h2>Targets and indicators</h2>
+    <h2>Objectius i indicadors</h2>
 
     
     
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.1</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.1</span>
         </h3>
-        <span class="target-name">Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7 per cent gross domestic product growth per annum in the least developed countries</span>
+        <span class="target-name">Mantenir el creixement econòmic per càpita d’acord amb les circumstàncies nacionals i, en particular, com a mínim el 7% del creixement del producte interior brut anual als països menys desenvolupats.</span>
         
 
           
@@ -451,17 +451,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.1.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.1.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-1-1">Annual growth rate of real GDP per capita</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-1-1">Taxa de creixement anual del PIB real per càpita</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -479,9 +479,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.2</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.2</span>
         </h3>
-        <span class="target-name">Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors</span>
+        <span class="target-name">Aconseguir nivells més alts de productivitat econòmica mitjançant la diversificació, l'actualització tecnològica i la innovació, inclòs el focus en sectors d'alt valor afegit i intensiva en mà d'obra</span>
         
 
           
@@ -490,17 +490,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.2.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.2.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-2-1">Annual growth rate of real GDP per employed person</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-2-1">Taxa de creixement anual del PIB real per persona ocupada</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -518,9 +518,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.3</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.3</span>
         </h3>
-        <span class="target-name">Promote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services</span>
+        <span class="target-name">Promoure polítiques orientades al desenvolupament que donin suport a activitats productives, creació d’ocupació decent, emprenedoria, creativitat i innovació, i fomentin la formalització i el creixement de les micro, petites i mitjanes empreses, fins i tot mitjançant l’accés a serveis financers.</span>
         
 
           
@@ -529,17 +529,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.3.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.3.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-3-1">Proportion of informal employment in total employment, by sector and sex</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-3-1">Proporció d'ocupació informal en el sector no agrícola, desglossada per sexe</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -557,9 +557,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.4</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.4</span>
         </h3>
-        <span class="target-name">Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10‐Year Framework of Programmes on Sustainable Consumption and Production, with developed countries taking the lead</span>
+        <span class="target-name">Millorar progressivament, fins al 2030, l’eficiència mundial dels recursos en consum i producció i intentar desvincular el creixement econòmic de la degradació del medi ambient, d’acord amb el Marc decennal de programes sobre consum i producció sostenibles, amb els països desenvolupats al capdavant.</span>
         
 
           
@@ -568,17 +568,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.4.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.4.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-4-1">Material footprint, material footprint per capita, and material footprint per GDP</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-4-1">Empremta material en termes absoluts, Empremta material per càpita i Empremta material per PIB</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -598,17 +598,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.4.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.4.2</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-4-2">Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-4-2">Consum material intern en termes absoluts, consum material intern per càpita i consum material intern per PIB</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -626,9 +626,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.5</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.5</span>
         </h3>
-        <span class="target-name">By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value</span>
+        <span class="target-name">Per al 2030, aconseguir una ocupació plena i productiva i un treball digne per a totes les dones i homes, inclosos els joves i les persones amb discapacitat, i la igualtat salarial per un treball d’igual valor</span>
         
 
           
@@ -637,17 +637,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.5.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.5.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-5-1">Average hourly earnings of employees, by sex, age, occupation and persons with disabilities</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-5-1">Ingrés mitjà per hora d'empleades i empleats, desglossat per ocupació, edat i persones amb discapacitat</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -667,17 +667,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.5.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.5.2</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-5-2">Unemployment rate, by sex, age and persons with disabilities</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-5-2">Taxa de desocupació, desglossada per sexe, edat i persones amb discapacitat</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -695,9 +695,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.6</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.6</span>
         </h3>
-        <span class="target-name">By 2020, substantially reduce the proportion of youth not in employment, education or training</span>
+        <span class="target-name">El 2020, reduïu substancialment la proporció de joves que no treballen, no formen ni formen</span>
         
 
           
@@ -706,17 +706,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.6.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.6.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-6-1">Proportion of youth (aged 15–24 years) not in education, employment or training</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-6-1">Proporció de joves (entre 15 i 24 anys) que no cursen estudis, no estan ocupats ni reben capacitació</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -734,9 +734,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.7</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.7</span>
         </h3>
-        <span class="target-name">Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms</span>
+        <span class="target-name">Prendre mesures immediates i efectives per eradicar el treball forçat, acabar amb l'esclavitud moderna i el tràfic de persones i garantir la prohibició i l'eliminació de les pitjors formes de treball infantil, inclosos el reclutament i l'ús de nens soldats, i per al 2025 acabar amb el treball infantil en totes les seves formes.</span>
         
 
           
@@ -745,17 +745,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.7.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.7.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-7-1">Proportion and number of children aged 5–17 years engaged in child labour, by sex and age</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-7-1">Proporció i nombre de nens d'entre 5 i 17 anys que fan treball infantil, desglossats per sexe i edat</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -773,9 +773,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.8</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.8</span>
         </h3>
-        <span class="target-name">Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment</span>
+        <span class="target-name">Protegir els drets laborals i promoure entorns de treball segurs i segurs per a tots els treballadors, inclosos els treballadors migrants, en particular les dones migrants, i les persones amb ocupació precària.</span>
         
 
           
@@ -784,17 +784,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.8.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.8.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-8-1">Fatal and non-fatal occupational injuries per 100,000 workers, by sex and migrant status</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-8-1">Taxes de freqüència de les lesions ocupacionals mortals i no mortals, desglossades per sexe i estatus migratori</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -814,17 +814,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.8.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.8.2</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-8-2">Level of national compliance with labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-8-2">Nivell de compliment nacional dels drets laborals (llibertat d'associació i negociació col·lectiva) conformement a les fonts textuals de l'Organització Internacional del Treball (OIT) i la legislació interna, desglossat per sexe i estatus migratori</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -842,9 +842,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.9</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.9</span>
         </h3>
-        <span class="target-name">By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products</span>
+        <span class="target-name">El 2030, idear i implementar polítiques per promoure un turisme sostenible que creï llocs de treball i promogui la cultura i els productes locals</span>
         
 
           
@@ -853,17 +853,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.9.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.9.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-9-1">Tourism direct GDP as a proportion of total GDP and in growth rate</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-9-1">PIB generat directament pel turisme en proporció al PIB total i a la taxa de creixement</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -881,9 +881,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.10</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.10</span>
         </h3>
-        <span class="target-name">Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all</span>
+        <span class="target-name">Reforçar la capacitat de les institucions financeres nacionals per fomentar i ampliar l'accés a serveis bancaris, d'assegurances i financers per a tothom</span>
         
 
           
@@ -892,17 +892,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.10.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.10.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-10-1">(a) Number of commercial bank branches per 100,000 adults and (b) number of automated teller machines (ATMs) per 100,000 adults</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-10-1">a) Nombre de sucursals de bancs comercials per cada 100.000 adults i b) nombre de caixers automàtics per cada 100.000 adults</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -922,56 +922,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.10.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.10.2</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-10-2">Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-10-2">Proporció d'adults (a partir de 15 anys d'edat) que tenen un compte en un banc o una altra institució financera o un proveïdor de serveis de diners mòbils</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
-</span>
-
-
-            
-
-
-
-
-
-            
-          </div>
-        
-      </div>
-    
-      
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.a</span>
-        </h3>
-        <span class="target-name">Increase Aid for Trade support for developing countries, in particular least developed countries, including through the Enhanced Integrated Framework for Trade-related Technical Assistance to Least Developed Countries</span>
-        
-
-          
-          
-          
-
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.a.1</span>
-            </h4>
-            
-            <span class="indicator-name"><a href="/site/8-a-1">Aid for Trade commitments and disbursements</a></span>
-            <span class="sr-only">Indicator status</span>
-            
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -989,9 +950,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 8.b</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.a</span>
         </h3>
-        <span class="target-name">By 2020, develop and operationalize a global strategy for youth employment and implement the Global Jobs Pact of the International Labour Organization</span>
+        <span class="target-name">Incrementar l’ajut al comerç per als països en desenvolupament, en particular els països menys desenvolupats, fins i tot mitjançant el Marc integrat millorat per a l’assistència tècnica relacionada amb el comerç als països menys avançats.</span>
         
 
           
@@ -1000,17 +961,56 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 8.b.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.a.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/8-b-1">Existence of a developed and operationalized national strategy for youth employment, as a distinct strategy or as part of a national employment strategy</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/8-a-1">Compromisos i desemborsaments en relació amb la iniciativa Ajuda per al Comerç</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
+</span>
+
+
+            
+
+
+
+
+
+            
+          </div>
+        
+      </div>
+    
+      
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Objectiu</span> 8.b</span>
+        </h3>
+        <span class="target-name">Per al 2020, desenvolupar i posar en funcionament una estratègia global per a l’ocupació juvenil i implementar el Pacte Mundial per a l’Ocupació de l’Organització Internacional del Treball</span>
+        
+
+          
+          
+          
+
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 8.b.1</span>
+            </h4>
+            
+            <span class="indicator-name"><a href="/site/8-b-1">Existència d'una estratègia nacional organitzada i en marxa per a l'ús dels joves, com a estratègia independent o com a part d'una estratègia nacional d'ocupació</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
+            
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -1034,10 +1034,10 @@ data-event-label="high"
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construït amb Open SDG</a></li>
             
               <li>
-                <a href="/site/contact-us">Contact us</a>
+                <a href="/site/contact-us">Contacta'ns</a>
                 
                 </li>
               <li>
@@ -1051,7 +1051,7 @@ data-event-label="high"
                 
                 </li>
               <li>
-                <a href="/site/about/cookies-and-privacy/">Cookies</a>
+                <a href="/site/about/cookies-and-privacy/">Galetes</a>
                 
                 </li>
               
@@ -1086,17 +1086,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'amagar-se';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Cerca';</script>
 
-<script src='/site/assets/js/sdg.js?v=20211130091426'></script>
+<script src='/site/assets/js/sdg.js?v=20211130153417'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20211130091426"></script><script>
+    <script src="/site/assets/js/custom.js?v=20211130153417"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

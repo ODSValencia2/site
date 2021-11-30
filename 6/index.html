@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="ca" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://odsvalencia2.github.io/data/en',
+  remoteDataBaseUrl: 'https://odsvalencia2.github.io/data/ca',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'ca',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Goal 6 - Clean water and sanitation - Indicators For The Sustainable Development Goals</title>
+    <title>Objectiu 6 - Aigua neta i sanejament - Indicadors per als objectius de desenvolupament sostenible</title>
 
 
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211130091426">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211130153417">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -147,21 +147,21 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-ca
 layout-goal-by-target-vertical
 ">
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contrast per defecte","disable_high_contrast":"Desactiva l’alt contrast","disclaimer":"Es tracta d’un lloc web de desenvolupament. Agraïm els vostres comentaris <a href=\"mailto:%email_address\"> </a>.","enable_high_contrast":"Activa el contrast elevat","high_contrast":"Contrast alt","skip_link":"Vés al contingut principal","tag_line":"17 objectius per transformar el nostre món","toggle_menu":"Commuta el menú. Feu clic per expandir o reduir el menú.","toggle_search":"Canvia de cerca. Feu clic per expandir o reduir la barra de cerca."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Vés al contingut principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Es tracta d’un lloc web de desenvolupament. Agraïm els vostres comentaris <a href="mailto:test@example.com"> </a>.
   </div>
 </div>
 
@@ -172,15 +172,15 @@ layout-goal-by-target-vertical
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/site/" id="home">
-    <img src="/site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/site/assets/img/SDG_logo.png" alt="Objectius de desenvolupament sostenible - 17 objectius per transformar el nostre món" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'>
         
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -191,8 +191,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -209,8 +209,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/6/">
               Español
@@ -225,9 +225,9 @@ data-event-label="high"
     <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
   <form action="/site/search/">
-    <label class="sr-only" for="indicator_search">Search</label>
-    <input type="text" name="q" id="indicator_search" title="Search" /><!--
-    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search">Cerca</label>
+    <input type="text" name="q" id="indicator_search" title="Cerca" /><!--
+    --><button aria-label="Cerca" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -243,8 +243,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/6/">
               Español
@@ -258,8 +258,8 @@ data-event-label="high"
         </li>
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -270,8 +270,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -290,19 +290,19 @@ data-event-label="high"
     <div class="navbar navbar-default menu-without-widgets" id="main-nav">
       <ul class="top-level">
     <li id="menuToggle"
-        aria-label="Menu toggle. Click to expand or collapse the menu."
+        aria-label="Commuta el menú. Feu clic per expandir o reduir el menú."
         aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+        <button data-target="menu-mobile" aria-expanded="false">Menú</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/site/goals">Goals</a>
+    <a href="/site/goals">Metes</a>
 </li><li class="nav-link ">
-    <a href="/site/reporting-status">Reporting Status</a>
+    <a href="/site/reporting-status">Estat de l'informe</a>
 </li><li class="nav-link ">
-    <a href="/site/about">About</a>
+    <a href="/site/about">Quant a</a>
 </li><li class="nav-link ">
-    <a href="/site/faq">FAQ</a>
+    <a href="/site/faq">PMF</a>
 </li><li class="nav-link ">
-    <a href="/site/news">Updates</a>
+    <a href="/site/news">Novetats</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -314,8 +314,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/6/">
               Español
@@ -331,8 +331,8 @@ data-event-label="high"
 
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -343,8 +343,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -361,29 +361,29 @@ data-event-label="high"
 
     </li>
     <li id="searchToggle"
-        aria-label="Search toggle. Click to expand or collapse the search bar."
+        aria-label="Canvia de cerca. Feu clic per expandir o reduir la barra de cerca."
         aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Search</button>
+        <button data-target="search-mobile" aria-expanded="false">Cerca</button>
         <div id="search-mobile" class="menu-target">
   <form action="/site/search/">
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
-    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search-mobile">Cerca</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Cerca" /><!--
+    --><button aria-label="Cerca" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
     </li>
 </ul>
       <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/site/goals">Goals</a>
+    <a href="/site/goals">Metes</a>
 </li><li class="nav-link ">
-    <a href="/site/reporting-status">Reporting Status</a>
+    <a href="/site/reporting-status">Estat de l'informe</a>
 </li><li class="nav-link ">
-    <a href="/site/about">About</a>
+    <a href="/site/about">Quant a</a>
 </li><li class="nav-link ">
-    <a href="/site/faq">FAQ</a>
+    <a href="/site/faq">PMF</a>
 </li><li class="nav-link ">
-    <a href="/site/news">Updates</a>
+    <a href="/site/news">Novetats</a>
 </li>
 
 </ul>
@@ -401,8 +401,8 @@ data-event-label="high"
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/site/">Home</a></li>
-  <li><a href="/site/goals">Goals</a></li>
+  <li><a href="/site/">Inici</a></li>
+  <li><a href="/site/goals">Metes</a></li>
   
   
 </ol>
@@ -414,11 +414,11 @@ data-event-label="high"
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/6.png" alt="Clean water and sanitation - Goal 6" id="goal-6" class="goal-icon-image goal-icon-image-" />
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ca/6.png" alt="Aigua neta i sanejament - Objectiu 6" id="goal-6" class="goal-icon-image goal-icon-image-" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 6: </span>Ensure availability and sustainable management of water and sanitation for all
+          <span class="hidden-sm hidden-md hidden-lg">Objectiu 6: </span>Garantir la disponibilitat i la gestió sostenible de l’aigua i el sanejament per a tothom
         </h1>
       </div>
     </div>
@@ -433,16 +433,16 @@ data-event-label="high"
 
 
   <div class="container">
-    <h2>Targets and indicators</h2>
+    <h2>Objectius i indicadors</h2>
 
     
     
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 6.1</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 6.1</span>
         </h3>
-        <span class="target-name">By 2030, achieve universal and equitable access to safe and affordable drinking water for all</span>
+        <span class="target-name">Per al 2030, aconseguir un accés universal i equitatiu a aigua potable segura i assequible per a tothom</span>
         
 
           
@@ -451,17 +451,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 6.1.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 6.1.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/6-1-1">Proportion of population using safely managed drinking water services</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/6-1-1">Proporció de la població que utilitza serveis de subministrament d'aigua potable gestionats sense riscos</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -479,9 +479,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 6.2</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 6.2</span>
         </h3>
-        <span class="target-name">By 2030, achieve access to adequate and equitable sanitation and hygiene for all and end open defecation, paying special attention to the needs of women and girls and those in vulnerable situations</span>
+        <span class="target-name">Per al 2030, assolir l'accés a un sanejament i higiene adequats i equitatius per a tothom i acabar amb la defecació oberta, prestant especial atenció a les necessitats de les dones i les nenes i de les persones en situació de vulnerabilitat.</span>
         
 
           
@@ -490,17 +490,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 6.2.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 6.2.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/6-2-1">Proportion of population using (a) safely managed sanitation services and (b) a hand-washing facility with soap and water</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/6-2-1">Proporció de la població que utilitza: a) serveis de sanejament gestionats sense riscos i b) instal·lacions per a la rentada de mans amb aigua i sabó</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -518,9 +518,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 6.3</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 6.3</span>
         </h3>
-        <span class="target-name">By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally</span>
+        <span class="target-name">El 2030, millorar la qualitat de l'aigua reduint la contaminació, eliminant l'abocament i minimitzant l'alliberament de productes i productes químics perillosos, reduint a la meitat la proporció d'aigües residuals no tractades i augmentant substancialment el reciclatge i la reutilització segura a nivell mundial</span>
         
 
           
@@ -529,17 +529,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 6.3.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 6.3.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/6-3-1">Proportion of domestic and industrial wastewater flows safely treated</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/6-3-1">Proporció d'aigües residuals tractades de manera adequada</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -559,17 +559,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 6.3.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 6.3.2</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/6-3-2">Proportion of bodies of water with good ambient water quality</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/6-3-2">Proporció de masses d'aigua de bona qualitat</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -587,9 +587,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 6.4</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 6.4</span>
         </h3>
-        <span class="target-name">By 2030, substantially increase water-use efficiency across all sectors and ensure sustainable withdrawals and supply of freshwater to address water scarcity and substantially reduce the number of people suffering from water scarcity</span>
+        <span class="target-name">Per al 2030, augmentar substancialment l’eficiència de l’ús de l’aigua en tots els sectors i assegurar la retirada i el subministrament sostenibles d’aigua dolça per fer front a l’escassetat d’aigua i reduir substancialment el nombre de persones que pateixen d’aigua.</span>
         
 
           
@@ -598,17 +598,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 6.4.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 6.4.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/6-4-1">Change in water-use efficiency over time</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/6-4-1">Canvi en l'ús eficient dels recursos hídrics amb el pas del temps</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -628,17 +628,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 6.4.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 6.4.2</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/6-4-2">Level of water stress: freshwater withdrawal as a proportion of available freshwater resources</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/6-4-2">Nivell d'estrès hídric: extracció d'aigua dolça en proporció als recursos d'aigua dolça disponibles</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -656,9 +656,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 6.5</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 6.5</span>
         </h3>
-        <span class="target-name">By 2030, implement integrated water resources management at all levels, including through transboundary cooperation as appropriate</span>
+        <span class="target-name">Per al 2030, implementar una gestió integrada dels recursos hídrics a tots els nivells, inclosa la cooperació transfronterera, si escau</span>
         
 
           
@@ -667,17 +667,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 6.5.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 6.5.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/6-5-1">Degree of integrated water resources management</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/6-5-1">Grau d'implementació de la gestió integrada dels recursos hídrics (0‐100)</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -697,56 +697,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 6.5.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 6.5.2</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/6-5-2">Proportion of transboundary basin area with an operational arrangement for water cooperation</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/6-5-2">Proporció de la superfície de conques transfrontereres subjectes a arranjaments operacionals per a la cooperació en matèria d'aigües</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
-</span>
-
-
-            
-
-
-
-
-
-            
-          </div>
-        
-      </div>
-    
-      
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 6.6</span>
-        </h3>
-        <span class="target-name">By 2020, protect and restore water-related ecosystems, including mountains, forests, wetlands, rivers, aquifers and lakes</span>
-        
-
-          
-          
-          
-
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 6.6.1</span>
-            </h4>
-            
-            <span class="indicator-name"><a href="/site/6-6-1">Change in the extent of water-related ecosystems over time</a></span>
-            <span class="sr-only">Indicator status</span>
-            
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -764,9 +725,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 6.a</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 6.6</span>
         </h3>
-        <span class="target-name">By 2030, expand international cooperation and capacity-building support to developing countries in water- and sanitation-related activities and programmes, including water harvesting, desalination, water efficiency, wastewater treatment, recycling and reuse technologies</span>
+        <span class="target-name">Per al 2020, protegir i restaurar ecosistemes relacionats amb l’aigua, incloses muntanyes, boscos, aiguamolls, rius, aqüífers i llacs</span>
         
 
           
@@ -775,17 +736,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 6.a.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 6.6.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/6-a-1">Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/6-6-1">Canvi en l'extensió dels ecosistemes relacionats amb l'aigua amb el pas del temps</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -803,9 +764,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 6.b</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 6.a</span>
         </h3>
-        <span class="target-name">Support and strengthen the participation of local communities in improving water and sanitation management</span>
+        <span class="target-name">Per al 2030, amplieu la cooperació internacional i el suport a la creació de capacitats als països en desenvolupament en activitats i programes relacionats amb l'aigua i el sanejament, incloses les tecnologies de recol·lecció d'aigua, dessalinització, eficiència de l'aigua, tractament d'aigües residuals, reciclatge i reutilització.</span>
         
 
           
@@ -814,17 +775,56 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 6.b.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 6.a.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/6-b-1">Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/6-a-1">Volum de l'assistència oficial per al desenvolupament destinada a l'aigua i el sanejament que forma part d'un pla de despeses coordinades pel govern</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
+</span>
+
+
+            
+
+
+
+
+
+            
+          </div>
+        
+      </div>
+    
+      
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Objectiu</span> 6.b</span>
+        </h3>
+        <span class="target-name">Donar suport i enfortir la participació de les comunitats locals en la millora de la gestió de l'aigua i el sanejament</span>
+        
+
+          
+          
+          
+
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 6.b.1</span>
+            </h4>
+            
+            <span class="indicator-name"><a href="/site/6-b-1">Proporció de dependències administratives locals que han establert polítiques i procediments operacionals per a la participació de les comunitats locals en la gestió de l'aigua i el sanejament</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
+            
+
+
+
+<span class="status notstarted">
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -848,10 +848,10 @@ data-event-label="high"
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construït amb Open SDG</a></li>
             
               <li>
-                <a href="/site/contact-us">Contact us</a>
+                <a href="/site/contact-us">Contacta'ns</a>
                 
                 </li>
               <li>
@@ -865,7 +865,7 @@ data-event-label="high"
                 
                 </li>
               <li>
-                <a href="/site/about/cookies-and-privacy/">Cookies</a>
+                <a href="/site/about/cookies-and-privacy/">Galetes</a>
                 
                 </li>
               
@@ -900,17 +900,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'amagar-se';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Cerca';</script>
 
-<script src='/site/assets/js/sdg.js?v=20211130091426'></script>
+<script src='/site/assets/js/sdg.js?v=20211130153417'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20211130091426"></script><script>
+    <script src="/site/assets/js/custom.js?v=20211130153417"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

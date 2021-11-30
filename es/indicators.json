@@ -15,23 +15,23 @@
         },
         {
           "id": "1-2-1",
-          "title": "Proporción de la población que vive por debajo del umbral nacional de pobreza, desglosada por sexo y edad",
+          "title": "global_indicators.1.2.1-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-2-2",
-          "title": "Proporción de hombres, mujeres y niños de todas las edades que viven en la pobreza, en todas sus dimensiones, con arreglo a las definiciones nacionales",
+          "title": "global_indicators.1.2.2-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-2-3",
-          "title": "global_indicators.1-2-3-title",
+          "title": "global_indicators.1.2.3-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-3",
@@ -39,7 +39,7 @@
         },
         {
           "id": "1-2-4",
-          "title": "global_indicators.1-2-4-title",
+          "title": "global_indicators.1.2.4-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-4",
@@ -47,7 +47,7 @@
         },
         {
           "id": "1-2-5",
-          "title": "global_indicators.1-2-5-title",
+          "title": "global_indicators.1.2.5-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-5",
@@ -55,7 +55,7 @@
         },
         {
           "id": "1-2-6",
-          "title": "global_indicators.1-2-6-title",
+          "title": "global_indicators.1.2.6-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-6",
@@ -63,7 +63,7 @@
         },
         {
           "id": "1-2-7",
-          "title": "global_indicators.1-2-7-title",
+          "title": "global_indicators.1.2.7-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-7",
@@ -71,7 +71,7 @@
         },
         {
           "id": "1-2-8",
-          "title": "global_indicators.1-2-8-title",
+          "title": "global_indicators.1.2.8-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-8",
@@ -79,7 +79,7 @@
         },
         {
           "id": "1-2-9",
-          "title": "global_indicators.1-2-9-title",
+          "title": "global_indicators.1.2.9-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-9",
@@ -87,7 +87,7 @@
         },
         {
           "id": "1-2-10",
-          "title": "global_indicators.1-2-10-title",
+          "title": "global_indicators.1.2.10-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-10",
@@ -95,7 +95,7 @@
         },
         {
           "id": "1-2-11",
-          "title": "global_indicators.1-2-11-title",
+          "title": "global_indicators.1.2.11-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-11",
@@ -103,7 +103,7 @@
         },
         {
           "id": "1-2-12",
-          "title": "global_indicators.1-2-12-title",
+          "title": "global_indicators.1.2.12-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-2-12",
@@ -167,23 +167,23 @@
         },
         {
           "id": "1-a-1",
-          "title": "Total de las subvenciones de asistencia oficial para el desarrollo de todos los donantes que se centran en la reducción de la pobreza como porcentaje del ingreso nacional bruto del país receptor",
+          "title": "global_indicators.1.a.1-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-a-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-a-2",
-          "title": "Proporción del gasto público total que se dedica a servicios esenciales (educación, salud y protección social)",
+          "title": "global_indicators.1.a.2-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-a-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "1-a-3",
-          "title": "Suma del total de las subvenciones y asignaciones no generadoras de deuda dedicadas directamente a programas de reducción de la pobreza en proporción al PIB",
+          "title": "global_indicators.1.a.3-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-a-3",
@@ -191,7 +191,7 @@
         },
         {
           "id": "1-a-4",
-          "title": "global_indicators.1-a-4-title",
+          "title": "global_indicators.1.a.4-title",
           "description": "",
           "keywords": "",
           "href": "/site/es/1-a-4",

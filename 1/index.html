@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="ca" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://odsvalencia2.github.io/data/en',
+  remoteDataBaseUrl: 'https://odsvalencia2.github.io/data/ca',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'ca',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Goal 1 - No poverty - Indicators For The Sustainable Development Goals</title>
+    <title>Objectiu 1 - Sense pobresa - Indicadors per als objectius de desenvolupament sostenible</title>
 
 
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211130091426">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211130153417">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -147,21 +147,21 @@ var translations = {
         
 
     </head>
-<body class="language-en
+<body class="language-ca
 layout-goal-by-target-vertical
 ">
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"Contrast per defecte","disable_high_contrast":"Desactiva l’alt contrast","disclaimer":"Es tracta d’un lloc web de desenvolupament. Agraïm els vostres comentaris <a href=\"mailto:%email_address\"> </a>.","enable_high_contrast":"Activa el contrast elevat","high_contrast":"Contrast alt","skip_link":"Vés al contingut principal","tag_line":"17 objectius per transformar el nostre món","toggle_menu":"Commuta el menú. Feu clic per expandir o reduir el menú.","toggle_search":"Canvia de cerca. Feu clic per expandir o reduir la barra de cerca."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Vés al contingut principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    Es tracta d’un lloc web de desenvolupament. Agraïm els vostres comentaris <a href="mailto:test@example.com"> </a>.
   </div>
 </div>
 
@@ -172,15 +172,15 @@ layout-goal-by-target-vertical
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/site/" id="home">
-    <img src="/site/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/site/assets/img/SDG_logo.png" alt="Objectius de desenvolupament sostenible - 17 objectius per transformar el nostre món" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'>
         
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -191,8 +191,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -209,8 +209,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/1/">
               Español
@@ -225,9 +225,9 @@ data-event-label="high"
     <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
   <form action="/site/search/">
-    <label class="sr-only" for="indicator_search">Search</label>
-    <input type="text" name="q" id="indicator_search" title="Search" /><!--
-    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search">Cerca</label>
+    <input type="text" name="q" id="indicator_search" title="Cerca" /><!--
+    --><button aria-label="Cerca" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -243,8 +243,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/1/">
               Español
@@ -258,8 +258,8 @@ data-event-label="high"
         </li>
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -270,8 +270,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -290,19 +290,19 @@ data-event-label="high"
     <div class="navbar navbar-default menu-without-widgets" id="main-nav">
       <ul class="top-level">
     <li id="menuToggle"
-        aria-label="Menu toggle. Click to expand or collapse the menu."
+        aria-label="Commuta el menú. Feu clic per expandir o reduir el menú."
         aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+        <button data-target="menu-mobile" aria-expanded="false">Menú</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/site/goals">Goals</a>
+    <a href="/site/goals">Metes</a>
 </li><li class="nav-link ">
-    <a href="/site/reporting-status">Reporting Status</a>
+    <a href="/site/reporting-status">Estat de l'informe</a>
 </li><li class="nav-link ">
-    <a href="/site/about">About</a>
+    <a href="/site/about">Quant a</a>
 </li><li class="nav-link ">
-    <a href="/site/faq">FAQ</a>
+    <a href="/site/faq">PMF</a>
 </li><li class="nav-link ">
-    <a href="/site/news">Updates</a>
+    <a href="/site/news">Novetats</a>
 </li><li class="language-toggle-menu-header">
     
 
@@ -314,8 +314,8 @@ data-event-label="high"
   
   <div class="btn-group language-toggle-dropdown ">
     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">English</span>
-      <span class="language-abbreviation">en</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
+      <span class="language-globe-in-dropdown"><i class="fa fa-globe language-toggle-globe-dropdown"></i></span><span class="language-name">Valencià</span>
+      <span class="language-abbreviation">ca</span><i class="language-toggle-caret fa fa-chevron-down"></i></button>
     <ul class="dropdown-menu"><li class="language-option-es">
             <a href="/site/es/1/">
               Español
@@ -331,8 +331,8 @@ data-event-label="high"
 
 
     <li class="nav-link contrast contrast-default contrast-type-default">
-        <a title="Disable high contrast"
-           aria-label="Disable high contrast"
+        <a title="Desactiva l’alt contrast"
+           aria-label="Desactiva l’alt contrast"
            data-contrast-switch-to="default"
            href="javascript:void(0)"
            data-on="click"
@@ -343,8 +343,8 @@ data-event-label="default"
         >A</a>
     </li>
     <li class="nav-link contrast contrast-high contrast-type-default">
-        <a title="Enable high contrast"
-           aria-label="Enable high contrast"
+        <a title="Activa el contrast elevat"
+           aria-label="Activa el contrast elevat"
            data-contrast-switch-to="high"
            href="javascript:void(0)"
            data-on="click"
@@ -361,29 +361,29 @@ data-event-label="high"
 
     </li>
     <li id="searchToggle"
-        aria-label="Search toggle. Click to expand or collapse the search bar."
+        aria-label="Canvia de cerca. Feu clic per expandir o reduir la barra de cerca."
         aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Search</button>
+        <button data-target="search-mobile" aria-expanded="false">Cerca</button>
         <div id="search-mobile" class="menu-target">
   <form action="/site/search/">
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
-    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search-mobile">Cerca</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Cerca" /><!--
+    --><button aria-label="Cerca" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
     </li>
 </ul>
       <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/site/goals">Goals</a>
+    <a href="/site/goals">Metes</a>
 </li><li class="nav-link ">
-    <a href="/site/reporting-status">Reporting Status</a>
+    <a href="/site/reporting-status">Estat de l'informe</a>
 </li><li class="nav-link ">
-    <a href="/site/about">About</a>
+    <a href="/site/about">Quant a</a>
 </li><li class="nav-link ">
-    <a href="/site/faq">FAQ</a>
+    <a href="/site/faq">PMF</a>
 </li><li class="nav-link ">
-    <a href="/site/news">Updates</a>
+    <a href="/site/news">Novetats</a>
 </li>
 
 </ul>
@@ -401,8 +401,8 @@ data-event-label="high"
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/site/">Home</a></li>
-  <li><a href="/site/goals">Goals</a></li>
+  <li><a href="/site/">Inici</a></li>
+  <li><a href="/site/goals">Metes</a></li>
   
   
 </ol>
@@ -414,11 +414,11 @@ data-event-label="high"
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/en/1.png" alt="No poverty - Goal 1" id="goal-1" class="goal-icon-image goal-icon-image-" />
+        <img src="https://open-sdg.org/sdg-translations/assets/img/goals/ca/1.png" alt="Sense pobresa - Objectiu 1" id="goal-1" class="goal-icon-image goal-icon-image-" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 1: </span>End poverty in all its forms everywhere
+          <span class="hidden-sm hidden-md hidden-lg">Objectiu 1: </span>Acabar amb la pobresa en totes les seves formes arreu
         </h1>
       </div>
     </div>
@@ -433,16 +433,16 @@ data-event-label="high"
 
 
   <div class="container">
-    <h2>Targets and indicators</h2>
+    <h2>Objectius i indicadors</h2>
 
     
     
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 1.1</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 1.1</span>
         </h3>
-        <span class="target-name">By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day</span>
+        <span class="target-name">El 2030, eradicar la pobresa extrema per a totes les persones de tot arreu, mesurades actualment com a persones que viuen amb menys d’1,25 dòlars al dia</span>
         
 
           
@@ -451,17 +451,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.1.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.1.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-1-1">Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-1-1">Proporció de la població que viu per sota del llindar internacional de pobresa, desglossada per sexe, edat, situació laboral i ubicació geogràfica (urbana o rural)</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -479,9 +479,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 1.2</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 1.2</span>
         </h3>
-        <span class="target-name">By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions</span>
+        <span class="target-name">Per al 2030, reduir almenys a la meitat la proporció d’homes, dones i nens de totes les edats que viuen en la pobresa en totes les seves dimensions segons les definicions nacionals.</span>
         
 
           
@@ -490,77 +490,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-2-1">Proportion of population living below the national poverty line, by sex and age</a></span>
-            <span class="sr-only">Indicator status</span>
-            
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
-</span>
-
-
-            
-
-
-
-
-
-            
-          </div>
-        
-
-          
-          
-          
-
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.2</span>
-            </h4>
-            
-            <span class="indicator-name"><a href="/site/1-2-2">Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions</a></span>
-            <span class="sr-only">Indicator status</span>
-            
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
-</span>
-
-
-            
-
-
-
-
-
-            
-          </div>
-        
-
-          
-          
-          
-
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.3</span>
-            </h4>
-            
-            <span class="indicator-name"><a href="/site/1-2-3">global_indicators.1-2-3-title</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-2-1">global_indicators.1.2.1-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -580,17 +520,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.4</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.2</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-2-4">global_indicators.1-2-4-title</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-2-2">global_indicators.1.2.2-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -610,17 +550,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.5</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.3</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-2-5">global_indicators.1-2-5-title</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-2-3">global_indicators.1.2.3-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -640,17 +580,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.6</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.4</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-2-6">global_indicators.1-2-6-title</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-2-4">global_indicators.1.2.4-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -670,17 +610,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.7</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.5</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-2-7">global_indicators.1-2-7-title</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-2-5">global_indicators.1.2.5-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -700,17 +640,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.8</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.6</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-2-8">global_indicators.1-2-8-title</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-2-6">global_indicators.1.2.6-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -730,17 +670,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.9</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.7</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-2-9">global_indicators.1-2-9-title</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-2-7">global_indicators.1.2.7-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -760,17 +700,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.10</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.8</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-2-10">global_indicators.1-2-10-title</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-2-8">global_indicators.1.2.8-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -790,17 +730,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.11</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.9</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-2-11">global_indicators.1-2-11-title</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-2-9">global_indicators.1.2.9-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -820,17 +760,77 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.12</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.10</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-2-12">global_indicators.1-2-12-title</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-2-10">global_indicators.1.2.10-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
+</span>
+
+
+            
+
+
+
+
+
+            
+          </div>
+        
+
+          
+          
+          
+
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.11</span>
+            </h4>
+            
+            <span class="indicator-name"><a href="/site/1-2-11">global_indicators.1.2.11-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
+            
+
+
+
+<span class="status complete">
+    <span class="status-inner">Denunciada</span>
+</span>
+
+
+            
+
+
+
+
+
+            
+          </div>
+        
+
+          
+          
+          
+
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.2.12</span>
+            </h4>
+            
+            <span class="indicator-name"><a href="/site/1-2-12">global_indicators.1.2.12-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
+            
+
+
+
+<span class="status complete">
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -848,9 +848,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 1.3</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 1.3</span>
         </h3>
-        <span class="target-name">Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable</span>
+        <span class="target-name">Implementar sistemes i mesures de protecció social adequats a nivell nacional per a tothom, inclosos els pisos, i per al 2030 aconseguir una cobertura substancial de pobres i vulnerables</span>
         
 
           
@@ -859,17 +859,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.3.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.3.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-3-1">Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-3-1">Proporció de la població coberta per sistemes o nivells mínims de protecció social, desglossada per sexe, distingint entre els nens, els aturats, els ancians, les persones amb discapacitat, les dones embarassades, els nounats, les víctimes d'accidents de treball, els pobres i els vulnerables</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -887,9 +887,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 1.4</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 1.4</span>
         </h3>
-        <span class="target-name">By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance</span>
+        <span class="target-name">El 2030, assegureu-vos que tots els homes i dones, en particular els pobres i els vulnerables, tinguin els mateixos drets als recursos econòmics, així com l’accés als serveis bàsics, la propietat i el control sobre la terra i altres formes de propietat, herència, recursos naturals, adequats. noves tecnologies i serveis financers, inclosa la microfinançament</span>
         
 
           
@@ -898,17 +898,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.4.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.4.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-4-1">Proportion of population living in households with access to basic services</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-4-1">Proporció de la població que viu en llars amb accés als serveis bàsics</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -928,17 +928,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.4.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.4.2</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-4-2">Proportion of total adult population with secure tenure rights to land, (a) with legally recognized documentation, and (b) who perceive their rights to land as secure, by sex and type of tenure</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-4-2">Proporció del total de la població adulta amb drets segurs de tinença de la terra: a) que posseeix documentació reconeguda legalment sobre aquest tema i b) considera segurs els seus drets, desglossada per sexe i tipus de tinença</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -956,9 +956,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 1.5</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 1.5</span>
         </h3>
-        <span class="target-name">By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters</span>
+        <span class="target-name">Per al 2030, consolideu la resistència dels pobres i de les persones en situació de vulnerabilitat i reduïu la seva exposició i vulnerabilitat a esdeveniments extrems relacionats amb el clima i a altres xocs i desastres econòmics, socials i ambientals.</span>
         
 
           
@@ -967,17 +967,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.5.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-5-1">Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-5-1">Nombre de persones mortes, desaparegudes i afectades directament atribuït a desastres per cada 100.000 habitants</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -997,17 +997,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.5.2</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-5-2">Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-5-2">Pèrdues econòmiques directes atribuïdes als desastres en relació amb el producte interor brut (PIB) mundial</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -1027,17 +1027,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.3</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.5.3</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-5-3">Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-5-3">Nombre de països que adopten i apliquen estratègies nacionals de reducció del risc de desastres d'acord amb el Marc de Sendái per a la Reducció del Risc de Desastres 2015‐2030</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -1057,17 +1057,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.4</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.5.4</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-5-4">Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-5-4">Proporció de governs locals que adopten i apliquen estratègies locals de reducció del risc de desastres d'acord amb les estratègies nacionals de reducció del risc de desastres</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -1085,9 +1085,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 1.a</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 1.a</span>
         </h3>
-        <span class="target-name">Ensure significant mobilization of resources from a variety of sources, including through enhanced development cooperation, in order to provide adequate and predictable means for developing countries, in particular least developed countries, to implement programmes and policies to end poverty in all its dimensions</span>
+        <span class="target-name">Garantir una mobilització significativa de recursos procedents de diverses fonts, inclosa la cooperació al desenvolupament reforçada, per proporcionar mitjans adequats i previsibles perquè els països en desenvolupament, en particular els països menys desenvolupats, implementin programes i polítiques per acabar amb la pobresa en totes les seves dimensions.</span>
         
 
           
@@ -1096,77 +1096,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.a.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.a.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-a-1">Total official development assistance grants from all donors that focus on poverty reduction as a share of the recipient country’s gross national income</a></span>
-            <span class="sr-only">Indicator status</span>
-            
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
-</span>
-
-
-            
-
-
-
-
-
-            
-          </div>
-        
-
-          
-          
-          
-
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.a.2</span>
-            </h4>
-            
-            <span class="indicator-name"><a href="/site/1-a-2">Proportion of total government spending on essential services (education, health and social protection)</a></span>
-            <span class="sr-only">Indicator status</span>
-            
-
-
-
-<span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
-</span>
-
-
-            
-
-
-
-
-
-            
-          </div>
-        
-
-          
-          
-          
-
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.a.3</span>
-            </h4>
-            
-            <span class="indicator-name"><a href="/site/1-a-3">Sum of total grants and non-debt-creating inflows directly allocated to poverty reduction programmes as a proportion of GDP</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-a-1">global_indicators.1.a.1-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -1186,17 +1126,77 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.a.4</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.a.2</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-a-4">global_indicators.1-a-4-title</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-a-2">global_indicators.1.a.2-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status complete">
-    <span class="status-inner">Reported</span>
+    <span class="status-inner">Denunciada</span>
+</span>
+
+
+            
+
+
+
+
+
+            
+          </div>
+        
+
+          
+          
+          
+
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.a.3</span>
+            </h4>
+            
+            <span class="indicator-name"><a href="/site/1-a-3">global_indicators.1.a.3-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
+            
+
+
+
+<span class="status complete">
+    <span class="status-inner">Denunciada</span>
+</span>
+
+
+            
+
+
+
+
+
+            
+          </div>
+        
+
+          
+          
+          
+
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.a.4</span>
+            </h4>
+            
+            <span class="indicator-name"><a href="/site/1-a-4">global_indicators.1.a.4-title</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
+            
+
+
+
+<span class="status complete">
+    <span class="status-inner">Denunciada</span>
 </span>
 
 
@@ -1214,9 +1214,9 @@ data-event-label="high"
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 1.b</span>
+          <span class="target-number"><span class="sr-only">Objectiu</span> 1.b</span>
         </h3>
-        <span class="target-name">Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions</span>
+        <span class="target-name">Crear marcs polítics sòlids a nivell nacional, regional i internacional, basats en estratègies de desenvolupament favorables als pobres i sensibles al gènere, per donar suport a la inversió accelerada en accions d’eradicació de la pobresa</span>
         
 
           
@@ -1225,17 +1225,17 @@ data-event-label="high"
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 1.b.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 1.b.1</span>
             </h4>
             
-            <span class="indicator-name"><a href="/site/1-b-1">Pro-poor public social spending</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="indicator-name"><a href="/site/1-b-1">Proporció de les despeses públiques periòdiques i de capital que es dedica a sectors que beneficien de manera desproporcionada a les dones, els pobres i els grups vulnerables</a></span>
+            <span class="sr-only">Estat de l’indicador</span>
             
 
 
 
 <span class="status notstarted">
-    <span class="status-inner">Exploring data sources</span>
+    <span class="status-inner">Exploració de fonts de dades</span>
 </span>
 
 
@@ -1259,10 +1259,10 @@ data-event-label="high"
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construït amb Open SDG</a></li>
             
               <li>
-                <a href="/site/contact-us">Contact us</a>
+                <a href="/site/contact-us">Contacta'ns</a>
                 
                 </li>
               <li>
@@ -1276,7 +1276,7 @@ data-event-label="high"
                 
                 </li>
               <li>
-                <a href="/site/about/cookies-and-privacy/">Cookies</a>
+                <a href="/site/about/cookies-and-privacy/">Galetes</a>
                 
                 </li>
               
@@ -1311,17 +1311,17 @@ data-event-label="high"
 
 
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'amagar-se';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Cerca';</script>
 
-<script src='/site/assets/js/sdg.js?v=20211130091426'></script>
+<script src='/site/assets/js/sdg.js?v=20211130153417'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20211130091426"></script><script>
+    <script src="/site/assets/js/custom.js?v=20211130153417"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
