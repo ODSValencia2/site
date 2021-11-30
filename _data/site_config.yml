@@ -25,8 +25,8 @@ contrast_type: default
 cookie_consent_form:
   enabled: false
 country:
-  name: Australia
-  adjective: Australian
+  name: indicator.ciudad
+  adjective: indicator.ciudad
 create_goals:
   layout: goal-by-target-vertical
   previous_next_links: false
@@ -76,10 +76,8 @@ footer_language_toggle: none
 footer_menu:
   - path: /contact-us
     translation_key: menu.contact_us
-  - path: 'https://twitter.com/MyTwitterAccount'
+  - path: 'https://twitter.com/EstadisticaVLC'
     translation_key: general.twitter
-  - path: 'https://facebook.com/MyFacebookAccount'
-    translation_key: general.facebook
   - path: /about/cookies-and-privacy/
     translation_key: menu.cookies
 frontpage_cards:
@@ -89,24 +87,14 @@ frontpage_cards:
     button_label: ''
     button_link: ''
     rule_color: ''
-  - title: Lorem ipsum
-    content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-      cursus est sed dapibus.
+  - title: frontpage.info
+    content: ''
     include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
-    rule_color: ''
-  - title: Nam vestibulum
-    content: |
-      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
-    include: ''
-    button_label: Read more
-    button_link: 'https://example.com'
+    button_label: frontpage.enlace_ods
+    button_link: 'https://www.valencia.es/cas/estadistica/ods_principal'
     rule_color: ''
 frontpage_goals_grid:
-  title: frontpage.heading
+  title: frontpage.title
   description: frontpage.instructions
 frontpage_heading: ''
 frontpage_instructions: ''
@@ -206,7 +194,7 @@ metadata_tabs:
     description: custom-translations.description-local-metadata
 news:
   category_links: false
-non_global_metadata: indicator.national_metadata
+non_global_metadata: indicator.local_metadata
 progress_status:
   status_heading: ''
   status_types: []
