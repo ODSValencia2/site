@@ -26,6 +26,13 @@
   font-weight: 700;
   src: local(""), url("../fonts/open-sans-v20-latin-700italic.woff2") format("woff2"), url("../fonts/open-sans-v20-latin-700italic.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+/**
+ * variables.scss
+ *
+ * This file left blank intentionally. Implementations of Open SDG can use
+ * a similarly named file to override any "default" variables in the "variables"
+ * folder.
+ */
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0; }
@@ -2303,8 +2310,8 @@ body.contrast-high #main-content.goal-indicators .indicator-cards span:not(.tags
     color: black !important; }
 
 .layout-indicator #page-content {
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
+  border-top: 1px solid #faebcc;
+  border-bottom: 1px solid #faebcc;
   padding-top: 10px; }
 
 @media only screen and (max-width: 500px) {
@@ -3275,3 +3282,10 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
     .layout-post.contrast-high .post-categories li:last-child:after {
       content: '';
       padding-right: 0; }
+
+/**
+ * custom.scss
+ *
+ * This file left blank intentionally. Implementations of Open SDG can use
+ * a similarly named file for custom styles.
+ */
