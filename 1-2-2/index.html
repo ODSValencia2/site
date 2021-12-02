@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211202102038">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211202152539">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -2476,16 +2476,45 @@ data-event-label="Change to custom-translations.local-metadata tab"
         <th scope="row">Definició i conceptes </th>
         <td>
           
-            <h2 id="definition">Definition:</h2>
-<p>The proportion of the employed population below the international poverty line of US$1.90 per day, also referred to as the working poverty rate, is defined as the share of employed persons living in households with per-capita consumption or income that is below the international poverty line of US$1.90.</p>
-<h2 id="concepts">Concepts:</h2>
-<p><strong>Employment:</strong> All persons of working age who, during a short reference period (one week), were engaged in any activity to produce goods or provide services for pay or profit.</p>
+            <p>Percentatge de persones amb ingressos per unitat de consum per davall del 60% de la mediana nacional d’ingressos per unitat de consum (escala OCDE modificada), on els ingressos s’han obtingut a partir de registres tributaris.</p>
 
-<p><strong>Poverty Line:</strong> Threshold below which individuals in the reference population are considered poor and above which they are considered non-poor. The threshold is generally defined as the per-capita monetary requirements an individual needs to afford the purchase of a basic bundle of goods and services. For the purpose of this indicator, an absolute international poverty line of US$1.90 per day is used.</p>
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Unitat de mesura </th>
+        <td>
+          
+            <p>Percentatge</p>
 
-<p><strong>Household in poverty:</strong> Households are defined as poor if their income or consumption expenditure is below the poverty line taking into account the number of household members and composition (e.g., number of adults and children).</p>
-
-<p><strong>Working poor:</strong> Employed persons living in households that are classified as poor, that is, that have income or consumption levels below the poverty line used for measurement.</p>
+          
+        </td>
+        </tr>
+        
+      
+  
+      
+        
+          
+      
+        
+          
+      
+        
+      
+      
+      <tr>
+        <th scope="row">Fonts de dades </th>
+        <td>
+          
+            <p>9907-Datos estadísticos de la ciudad de València. Pla Valencià d’Estadística 2019-2022. Explotació estadística Atles de Distribució de Renda de les Llars de l’Institut Nacional d’Estadística.</p>
 
           
         </td>
@@ -2519,22 +2548,40 @@ data-event-label="Change to custom-translations.local-metadata tab"
           
       
         
+      
+      
+      <tr>
+        <th scope="row">Comentari i limitacions </th>
+        <td>
           
+            <p>Aquest indicador forma part del Panell ODS de l’Institut Nacional d’Estadística (https://www.ine.es/dyngs/ODS/es/index.htm) i del Panell ODS del Portal Estadístic de la Generalitat Valenciana (http://pegv.gva.es/es/ods), que ofereixen aquesta informació per a àmbits territorials superiors.També forma part del Panell ODS de la Xarxa Espanyola per al Desenvolupament Sostenible (https://spanish-cities.sdgindex.org/).</p>
+
+<p>Documentació metodològica sobre l’Atles de Distribució de Renda de les Llars de l’INE: <a href="https://www.ine.es/experimental/atlas/exp_atlas_proyecto.pdf">Atles Renda</a>.</p>
+
+<p>Les dades de renda percebuda que s’utilitzen en el càlcul d’aquest indicador corresponen a l’any de referència i s’obtenen a partir de l’enllaç d’informació de l’INE amb dades tributàries, fonamentalment de la AEAT i de les Hisendes Forals. La població utilitzada per als càlculs està referida a 1 de gener de l’any següent al de referència.  El nombre d’unitats de consum d’una llar es calcula utilitzant l’escala OCDE modificada, que assigna un pes d’1 a la primera persona de 14 o més anys, un pes de 0,5 a la resta de persones de 14 o més anys i un pes de 0,3 a les persones de menys de 14 anys. Per exemple, una llar formada per dos adults i dos xiquets menors de 14 anys estaria formada per 2,1 unitats de consum.   Els ingressos per unitat de consum de la llar s’obtenen dividint els ingressos totals de la llar entre el nombre d’unitats de consum que la componen. A continuació s’adjudica aquest valor a cadascun dels membres que componen la llar. Els conceptes tributaris inclosos en la renda neta de la llar es descriuen en el document metodològic de l’operació estadística. La informació de l’Atles de Distribució de Renda de les Llars de l’INE està disponible per a altres característiques demogràfiques i àmbits territorials menors (barris i seccions).</p>
+
+          
+        </td>
+        </tr>
+        
+      
+  
       
         
-          
       
-        
-          
       
-        
+      <tr>
+        <th scope="row">Mètode de càlcul </th>
+        <td>
           
+            <p>Quocient de la població en risc de pobresa relativa considerant el llindar nacional de pobresa l’any de referència associat a ingressos recollits en fonts tributàries respecte a la població resident. L’ingrés de cadascuna de les persones que resideixen en una determinada llar es calcula com l’ingrés del total de la llar a la qual pertanyen entre el seu nombre d’unitats de consum. A continuació s’obté la mediana (percentil 50) de la distribució d’ingressos de totes les persones residents, sent el 60% d’aquest valor el llindar de pobresa considerat per a mesurar la pobresa relativa.</p>
+
+          
+        </td>
+        </tr>
+        
       
-        
-          
-      
-        
-          
+  
       
         
           
@@ -2729,12 +2776,12 @@ data-event-label="Change to custom-translations.local-metadata tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Cerca';</script>
 
-<script src='/site/assets/js/sdg.js?v=20211202102038'></script>
+<script src='/site/assets/js/sdg.js?v=20211202152539'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20211202102038"></script><script>
+    <script src="/site/assets/js/custom.js?v=20211202152539"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
