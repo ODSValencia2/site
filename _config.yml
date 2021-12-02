@@ -4,8 +4,8 @@
 remote_theme: open-sdg/open-sdg@1.6.0
 
 remote_data_prefix: "https://odsvalencia.github.io/data"
-data_edit_url: http://prose.io/#ODSValencia/data/edit/develop/data/indicator_[id].csv
-metadata_edit_url: http://prose.io/#ODSValencia/data/edit/develop/meta/ca/[id].yml
+data_edit_url: http://prose.io/#ODSValencia2/data/edit/develop/data/indicator_[id].csv
+metadata_edit_url: http://prose.io/#ODSValencia2/data/edit/develop/meta/ca/[id].yml
 # Replace this title as needed.
 title: general.site_title
 url: ""
