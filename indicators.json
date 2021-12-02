@@ -15,7 +15,7 @@
         },
         {
           "id": "1-2-1",
-          "title": "global_indicators.1.2.1-title",
+          "title": "Proporció de la població que viu per sota del llindar nacional de pobresa, desglossada per sexe i edat",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-1",
@@ -23,7 +23,7 @@
         },
         {
           "id": "1-2-2",
-          "title": "global_indicators.1.2.2-title",
+          "title": "Proporció d'homes, dones i nens de totes les edats que viuen en la pobresa, en totes les seves dimensions, conformement a les definicions nacionals",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-2",
@@ -31,7 +31,7 @@
         },
         {
           "id": "1-2-3",
-          "title": "global_indicators.1.2.3-title",
+          "title": "global_indicators.1-2-3-title",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-3",
@@ -39,7 +39,7 @@
         },
         {
           "id": "1-2-4",
-          "title": "global_indicators.1.2.4-title",
+          "title": "global_indicators.1-2-4-title",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-4",
@@ -47,7 +47,7 @@
         },
         {
           "id": "1-2-5",
-          "title": "global_indicators.1.2.5-title",
+          "title": "global_indicators.1-2-5-title",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-5",
@@ -55,7 +55,7 @@
         },
         {
           "id": "1-2-6",
-          "title": "global_indicators.1.2.6-title",
+          "title": "global_indicators.1-2-6-title",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-6",
@@ -63,7 +63,7 @@
         },
         {
           "id": "1-2-7",
-          "title": "global_indicators.1.2.7-title",
+          "title": "global_indicators.1-2-7-title",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-7",
@@ -71,7 +71,7 @@
         },
         {
           "id": "1-2-8",
-          "title": "global_indicators.1.2.8-title",
+          "title": "global_indicators.1-2-8-title",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-8",
@@ -79,7 +79,7 @@
         },
         {
           "id": "1-2-9",
-          "title": "global_indicators.1.2.9-title",
+          "title": "global_indicators.1-2-9-title",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-9",
@@ -87,7 +87,7 @@
         },
         {
           "id": "1-2-10",
-          "title": "global_indicators.1.2.10-title",
+          "title": "global_indicators.1-2-10-title",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-10",
@@ -95,7 +95,7 @@
         },
         {
           "id": "1-2-11",
-          "title": "global_indicators.1.2.11-title",
+          "title": "global_indicators.1-2-11-title",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-11",
@@ -103,7 +103,7 @@
         },
         {
           "id": "1-2-12",
-          "title": "global_indicators.1.2.12-title",
+          "title": "global_indicators.1-2-12-title",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-12",
@@ -167,7 +167,7 @@
         },
         {
           "id": "1-a-1",
-          "title": "global_indicators.1.a.1-title",
+          "title": "Proporció dels recursos generats a nivell intern que el govern assigna directament a programes de reducció de la pobresa",
           "description": "",
           "keywords": "",
           "href": "/site/1-a-1",
@@ -175,7 +175,7 @@
         },
         {
           "id": "1-a-2",
-          "title": "global_indicators.1.a.2-title",
+          "title": "Proporció de la despesa pública total que es dedica a serveis essencials (educació, salut i protecció social)",
           "description": "",
           "keywords": "",
           "href": "/site/1-a-2",
@@ -183,7 +183,7 @@
         },
         {
           "id": "1-a-3",
-          "title": "global_indicators.1.a.3-title",
+          "title": "Suma del total de les subvencions i assignacions no generadores de deute dedicades directament a programes de reducció de la pobresa en proporció al PIB",
           "description": "",
           "keywords": "",
           "href": "/site/1-a-3",
@@ -191,7 +191,7 @@
         },
         {
           "id": "1-a-4",
-          "title": "global_indicators.1.a.4-title",
+          "title": "global_indicators.1-a-4-title",
           "description": "",
           "keywords": "",
           "href": "/site/1-a-4",
