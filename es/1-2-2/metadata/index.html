@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211206113925">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20211206123126">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -924,7 +924,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "## Definition:\nThe proportion of the employed population below the international poverty line of US$1.90 per day, also referred to as the working poverty rate, is defined as the share of employed persons living in households with per-capita consumption or income that is below the international poverty line of US$1.90.\n## Concepts:\n**Employment:** All persons of working age who, during a short reference period (one week), were engaged in any activity to produce goods or provide services for pay or profit.\n\n**Poverty Line:** Threshold below which individuals in the reference population are considered poor and above which they are considered non-poor. The threshold is generally defined as the per-capita monetary requirements an individual needs to afford the purchase of a basic bundle of goods and services. For the purpose of this indicator, an absolute international poverty line of US$1.90 per day is used.\n\n**Household in poverty:** Households are defined as poor if their income or consumption expenditure is below the poverty line taking into account the number of household members and composition (e.g., number of adults and children).\n\n**Working poor:** Employed persons living in households that are classified as poor, that is, that have income or consumption levels below the poverty line used for measurement.");
+        var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "Porcentaje de personas con ingresos por unidad de consumo por debajo del 60% de la mediana nacional de ingresos por unidad de consumo (escala OCDE modificada), donde los ingresos se han obtenido a partir de registros tributarios.");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -938,7 +938,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('UNIT_MEASURE', "");
+        var currentValue = normalizeCurrentValue('UNIT_MEASURE', "Porcentaje");
         var propertyEditor = editor.getEditor('root.UNIT_MEASURE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -968,7 +968,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('SOURCE_TYPE', "");
+        var currentValue = normalizeCurrentValue('SOURCE_TYPE', "9907-Datos estadísticos de la ciudad de València. Plan Valenciano de Estadística 2019-2022.\n Explotación estadística Atlas de Distribución de Renta de los Hogares del Instituto Nacional de Estadística.");
         var propertyEditor = editor.getEditor('root.SOURCE_TYPE');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1082,7 +1082,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('REC_USE_LIM', "");
+        var currentValue = normalizeCurrentValue('REC_USE_LIM', "Este indicador forma parte del Panel ODS del Instituto Nacional de Estadística (https://www.ine.es/dyngs/ods/es/index.htm) y del Panel ODS del Portal Estadístico de la Generalitat Valenciana (http://pegv.gva.es/es/ods), que ofrecen esta información para ámbitos territoriales superiores.También forma parte del Panel ODS de la Red Española para el Desarrollo Sostenible (https://spanish-cities.sdgindex.org/).\nDocumentación metodológica sobre el Atlas de Distribución de Renta de los Hogares del INE: [Atlas Renta](https://www.ine.es/experimental/atlas/exp_atlas_proyecto.pdf).\nLos datos de renta percibida que se utilizan en el cálculo de este indicador corresponden al año de referencia y se obtienen a partir del enlace de información de la INE con datos tributarios, fundamentalmente de la AEAT y de las Haciendas Forales. La población utilizada para los cálculos está referida a 1 de enero del año siguiente al de referencia.  El número de unidades de consumo de un hogar se calcula utilizando la escala OCDE modificada, que asigna un peso de 1 a la primera persona de 14 o más años, un peso de 0,5 al resto de personas de 14 o más años y un peso de 0,3 a las personas de menos de 14 años. Por ejemplo, un hogar formado por dos adultos y dos niños menores de 14 años estaría formada por 2,1 unidades de consumo.   Los ingresos por unidad de consumo del hogar se obtienen dividiendo los ingresos totales del hogar entre el número de unidades de consumo que la componen. A continuación se adjudica este valor a cada uno de los miembros que componen el hogar. Los conceptos tributarios incluidos en la renta neta del hogar se describen en el documento metodológico de la operación estadística. La información del Atlas de Distribución de Renta de los Hogares del INE está disponible para otras características demográficas y ámbitos territoriales menores (barrios y secciones).");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1096,7 +1096,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('DATA_COMP', "");
+        var currentValue = normalizeCurrentValue('DATA_COMP', "Cociente de la población en riesgo de pobreza relativa considerando el umbral nacional de pobreza el año de referencia asociado a ingresos recogidos en fuentes tributarias respecto a la población residente.\n El ingreso de cada una de las personas que residen en un determinado hogar se calcula como el ingreso del total del hogar a la cual pertenecen entre su número de unidades de consumo. A continuación se obtiene la mediana (percentil 50) de la distribución de ingresos de todas las personas residentes, siendo el 60% de este valor el umbral de pobreza considerado para mesurar la pobreza relativa.");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1250,7 +1250,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/ODSValencia2/data/commit/b449dc5753f8253f5805d0d519324af103fb43d8");
+        var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/ODSValencia2/data/commit/8b41746d45cac1324a304443e729bcc47c65670e");
         var propertyEditor = editor.getEditor('root.national_metadata_update_url');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1264,7 +1264,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('national_metadata_update_url_text', "2021-12-02: see changes on GitHub");
+        var currentValue = normalizeCurrentValue('national_metadata_update_url_text', "2021-12-06: see changes on GitHub");
         var propertyEditor = editor.getEditor('root.national_metadata_update_url_text');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1403,12 +1403,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/site/assets/js/sdg.js?v=20211206113925'></script>
+<script src='/site/assets/js/sdg.js?v=20211206123126'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20211206113925"></script><script>
+    <script src="/site/assets/js/custom.js?v=20211206123126"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
