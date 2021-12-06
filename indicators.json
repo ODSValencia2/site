@@ -2,7 +2,7 @@
   {
     "goal": {
       "id": "1",
-      "title": "Acabar amb la pobresa en totes les seves formes arreu",
+      "title": "Posar fi a la pobresa en totes les seves formes i a tot arreu",
       "indicators": [
         
         {
@@ -210,7 +210,7 @@
   {
     "goal": {
       "id": "2",
-      "title": "Posar fi a la fam, assolir la seguretat alimentària i millorar la nutrició i promoure una agricultura sostenible",
+      "title": "Posar fi a la fam, assolir la seguretat alimentària i la millora de la nutrició, i promoure l’agricultura sostenible",
       "indicators": [
         
         {
@@ -330,7 +330,7 @@
   {
     "goal": {
       "id": "3",
-      "title": "Garantir vides saludables i promoure el benestar de totes les edats",
+      "title": "Garantir una vida sana i promoure el benestar per a totes les persones a totes les edats",
       "indicators": [
         
         {
@@ -562,7 +562,7 @@
   {
     "goal": {
       "id": "4",
-      "title": "Garantir una educació inclusiva i equitativa de qualitat i promoure oportunitats d’aprenentatge permanent per a tothom",
+      "title": "Garantir una educació inclusiva, equitativa i de qualitat i promoure oportunitats d’aprenentatge durant tota la vida per a tothom",
       "indicators": [
         
         {
@@ -666,7 +666,7 @@
   {
     "goal": {
       "id": "5",
-      "title": "Aconseguir la igualtat de gènere i empoderar totes les dones i nenes",
+      "title": "Aconseguir la igualtat de gènere i apoderar totes les dones i nenes",
       "indicators": [
         
         {
@@ -786,7 +786,7 @@
   {
     "goal": {
       "id": "6",
-      "title": "Garantir la disponibilitat i la gestió sostenible de l’aigua i el sanejament per a tothom",
+      "title": "Garantir la disponibilitat i una gestió sostenible de l’aigua i el sanejament per a totes les persones",
       "indicators": [
         
         {
@@ -882,7 +882,7 @@
   {
     "goal": {
       "id": "7",
-      "title": "Assegureu l'accés a una energia moderna, assequible, sostenible i moderna per a tothom",
+      "title": "Garantir l’accés a una energia assequible, segura, sostenible i moderna per a totes les persones",
       "indicators": [
         
         {
@@ -938,7 +938,7 @@
   {
     "goal": {
       "id": "8",
-      "title": "Promoure un creixement econòmic sostingut, inclusiu i sostenible, una ocupació plena i productiva i un treball digne per a tothom",
+      "title": "Promoure el creixement econòmic sostingut, inclusiu i sostenible, l’ocupació plena i productiva i el treball digne per a tothom",
       "indicators": [
         
         {
@@ -1074,7 +1074,7 @@
   {
     "goal": {
       "id": "9",
-      "title": "Construir infraestructures resistents, promoure una industrialització inclusiva i sostenible i fomentar la innovació",
+      "title": "Construir infraestructures resilients, promoure la industrialització inclusiva i sostenible i fomentar la innovació",
       "indicators": [
         
         {
@@ -1178,7 +1178,7 @@
   {
     "goal": {
       "id": "10",
-      "title": "Reduir la desigualtat dins i entre els països",
+      "title": "Reduir la desigualtat en i entre els països",
       "indicators": [
         
         {
@@ -1298,7 +1298,7 @@
   {
     "goal": {
       "id": "11",
-      "title": "Feu que les ciutats i els assentaments humans siguin inclusius, segurs, resistents i sostenibles",
+      "title": "Aconseguir que les ciutats i els assentaments humans siguin inclusius, segurs, resilients i sostenibles",
       "indicators": [
         
         {
@@ -1418,7 +1418,7 @@
   {
     "goal": {
       "id": "12",
-      "title": "Garantir pautes de consum i producció sostenibles",
+      "title": "Garantir modalitats de consum i producció sostenibles",
       "indicators": [
         
         {
@@ -1530,7 +1530,7 @@
   {
     "goal": {
       "id": "13",
-      "title": "Prendre mesures urgents per combatre el canvi climàtic i els seus impactes",
+      "title": "Adoptar mesures urgents per a combatre el canvi climàtic i els efectes que se'n deriven",
       "indicators": [
         
         {
@@ -1602,7 +1602,7 @@
   {
     "goal": {
       "id": "14",
-      "title": "Conservar i utilitzar de manera sostenible els oceans, els mars i els recursos marins per al desenvolupament sostenible",
+      "title": "Conservar i utilitzar de forma sostenible els oceans, els mars i els recursos marins per al desenvolupament sostenible",
       "indicators": [
         
         {
@@ -1690,7 +1690,7 @@
   {
     "goal": {
       "id": "15",
-      "title": "Protegir, restaurar i promoure un ús sostenible dels ecosistemes terrestres, gestionar de manera sostenible els boscos, combatre la desertificació i aturar i revertir la degradació de les terres i aturar la pèrdua de biodiversitat",
+      "title": "Protegir, restaurar i promoure l’ús sostenible dels ecosistemes terrestres, gestionar els boscos de manera sostenible, combatre la desertificació, aturar i revertir la degradació del sòl, i aturar la pèrdua de la biodiversitat",
       "indicators": [
         
         {
@@ -1810,7 +1810,7 @@
   {
     "goal": {
       "id": "16",
-      "title": "Promoure societats pacífiques i inclusives per al desenvolupament sostenible, proporcionar accés a la justícia per a tothom i construir institucions efectives, responsables i inclusives a tots els nivells",
+      "title": "Promoure societats pacífiques i inclusives per tal d’aconseguir un desenvolupament sostenible, proporcionar accés a la justícia per a totes les persones i desenvolupar institucions eficaces, responsables i inclusives a tots els nivells",
       "indicators": [
         
         {
@@ -2010,7 +2010,7 @@
   {
     "goal": {
       "id": "17",
-      "title": "Reforçar els mitjans d’implementació i revitalitzar l’Associació Mundial per al Desenvolupament Sostenible",
+      "title": "Enfortir els mitjans per a implementar i revitalitzar l’Aliança Mundial per al Desenvolupament Sostenible",
       "indicators": [
         
         {
