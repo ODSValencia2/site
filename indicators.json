@@ -110,62 +110,6 @@
           "status": "complete"
         },
         {
-          "id": "1-3-1",
-          "title": "Proporció de la població coberta per sistemes o nivells mínims de protecció social, desglossada per sexe, distingint entre els nens, els aturats, els ancians, les persones amb discapacitat, les dones embarassades, els nounats, les víctimes d'accidents de treball, els pobres i els vulnerables",
-          "description": "",
-          "keywords": "",
-          "href": "/site/1-3-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-4-1",
-          "title": "Proporció de la població que viu en llars amb accés als serveis bàsics",
-          "description": "",
-          "keywords": "",
-          "href": "/site/1-4-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-4-2",
-          "title": "Proporció del total de la població adulta amb drets segurs de tinença de la terra: a) que posseeix documentació reconeguda legalment sobre aquest tema i b) considera segurs els seus drets, desglossada per sexe i tipus de tinença",
-          "description": "",
-          "keywords": "",
-          "href": "/site/1-4-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-5-1",
-          "title": "Nombre de persones mortes, desaparegudes i afectades directament atribuït a desastres per cada 100.000 habitants",
-          "description": "",
-          "keywords": "",
-          "href": "/site/1-5-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-5-2",
-          "title": "Pèrdues econòmiques directes atribuïdes als desastres en relació amb el producte interor brut (PIB) mundial",
-          "description": "",
-          "keywords": "",
-          "href": "/site/1-5-2",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-5-3",
-          "title": "Nombre de països que adopten i apliquen estratègies nacionals de reducció del risc de desastres d'acord amb el Marc de Sendái per a la Reducció del Risc de Desastres 2015‐2030",
-          "description": "",
-          "keywords": "",
-          "href": "/site/1-5-3",
-          "status": "notstarted"
-        },
-        {
-          "id": "1-5-4",
-          "title": "Proporció de governs locals que adopten i apliquen estratègies locals de reducció del risc de desastres d'acord amb les estratègies nacionals de reducció del risc de desastres",
-          "description": "",
-          "keywords": "",
-          "href": "/site/1-5-4",
-          "status": "notstarted"
-        },
-        {
           "id": "1-a-1",
           "title": "Proporció dels recursos generats a nivell intern que el govern assigna directament a programes de reducció de la pobresa",
           "description": "",
@@ -196,14 +140,6 @@
           "keywords": "",
           "href": "/site/1-a-4",
           "status": "complete"
-        },
-        {
-          "id": "1-b-1",
-          "title": "Proporció de les despeses públiques periòdiques i de capital que es dedica a sectors que beneficien de manera desproporcionada a les dones, els pobres i els grups vulnerables",
-          "description": "",
-          "keywords": "",
-          "href": "/site/1-b-1",
-          "status": "notstarted"
         }]
     }
   },
