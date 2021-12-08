@@ -3,7 +3,7 @@
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 remote_theme: open-sdg/open-sdg@1.6.0
 
-remote_data_prefix: "https://odsvalencia.github.io/data"
+remote_data_prefix: "https://odsvalencia2.github.io/data/"
 data_edit_url: http://prose.io/#ODSValencia2/data/edit/develop/data/indicator_[id].csv
 metadata_edit_url: http://prose.io/#ODSValencia2/data/edit/develop/meta/ca/[id].yml
 # Replace this title as needed.
