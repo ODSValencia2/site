@@ -98,13 +98,13 @@ frontpage_cards:
     button_link: ''
     rule_color: ''
   - title: frontpage.info
-  #  content: ''
-  #  include: ''
-  #  button_label: frontpage.enlace_ods
-  #  button_link: 'https://www.valencia.es/cas/estadistica/ods_principal'
-  #  rule_color: ''
-    content: |
-      [frontpage.enlace_ods](https://www.valencia.es/cas/estadistica/ods_principal)
+    content: ''
+    include: ''
+    button_label: frontpage.enlace_ods
+    button_link: 'https://www.valencia.es/cas/estadistica/ods_principal'
+    rule_color: ''
+   # content: |
+   #   [frontpage.enlace_ods](https://www.valencia.es/cas/estadistica/ods_principal)
 frontpage_goals_grid:
   title: frontpage.title
   description: frontpage.instructions
