@@ -134,7 +134,7 @@ indicator_config_form:
   enabled: true
   dropdowns: []
   repository_link: https://github.com/ODSValencia2/data/tree/develop/indicator-config/[id]
-  translation_link: ''
+  translation_link: https://github.com/ODSValencia2/sdg-translations2/tree/develop/translations/[language]/[group].yml
 indicator_data_form:
   enabled: true
   repository_link: https://github.com/ODSValencia2/data/tree/develop/data/[id]
@@ -236,7 +236,7 @@ site_config_form:
   enabled: true
   dropdowns: []
   repository_link: /tree/develop/_data
-  translation_link: ''
+  translation_link: https://github.com/ODSValencia2/sdg-translations2/tree/develop/translations/[language]/[group].yml
 validate_indicator_config: false
 validate_site_config: false
 x_axis_label: ''
