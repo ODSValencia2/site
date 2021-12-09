@@ -199,7 +199,7 @@ menu:
   - path: /news
     translation_key: menu.updates
     dropdown: []
-metadata_edit_url: http://prose.io/#ODSValencia2/data/edit/develop/meta/[id].yml
+metadata_edit_url: http://prose.io/#ODSValencia2/data/edit/develop/meta/[language]/[id].yml
 metadata_tabs:
   - scope: national
     title: custom-translations.local-metadata
