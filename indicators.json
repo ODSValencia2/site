@@ -15,7 +15,7 @@
         },
         {
           "id": "1-2-1",
-          "title": "Proporció de la població que viu per sota del llindar nacional de pobresa, desglossada per sexe i edat",
+          "title": "Població en risc de pobresa relativa considerant el llindar autonòmic de pobresa",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-1",
@@ -23,7 +23,7 @@
         },
         {
           "id": "1-2-2",
-          "title": "Proporció d'homes, dones i nens de totes les edats que viuen en la pobresa, en totes les seves dimensions, conformement a les definicions nacionals",
+          "title": "Població en risc de pobresa relativa considerant el llindar nacional de pobresa segons ingressos recollits en fonts tributàries",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-2",
@@ -31,7 +31,7 @@
         },
         {
           "id": "1-2-3",
-          "title": "valencia-goals.1-2-3-title",
+          "title": "Població en risc de pobresa i/o exclusió social considerant el llindar autonòmic de pobresa: indicador AROPE",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-3",
@@ -39,7 +39,7 @@
         },
         {
           "id": "1-2-4",
-          "title": "global_indicators.1-2-4-title",
+          "title": "Població amb manca material severa",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-4",
@@ -47,7 +47,7 @@
         },
         {
           "id": "1-2-5",
-          "title": "global_indicators.1-2-5-title",
+          "title": "Ràtio P80/P20 en desigualtat d'ingressos recollits en fonts tributàries",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-5",
@@ -55,7 +55,7 @@
         },
         {
           "id": "1-2-6",
-          "title": "global_indicators.1-2-6-title",
+          "title": "Índex de Gini d'ingressos recollits en fonts tributàries",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-6",
@@ -63,7 +63,7 @@
         },
         {
           "id": "1-2-7",
-          "title": "global_indicators.1-2-7-title",
+          "title": "Població en nivells de pobresa alta considerant el llindar nacional de pobresa segons ingressos recollits en fonts tributàries",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-7",
@@ -71,7 +71,7 @@
         },
         {
           "id": "1-2-8",
-          "title": "global_indicators.1-2-8-title",
+          "title": "Llars familiars monoparentals",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-8",
@@ -79,7 +79,7 @@
         },
         {
           "id": "1-2-9",
-          "title": "global_indicators.1-2-9-title",
+          "title": "Població de 65 o més anys que viuen solos",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-9",
@@ -87,7 +87,7 @@
         },
         {
           "id": "1-2-10",
-          "title": "global_indicators.1-2-10-title",
+          "title": "Població de 80 o més anys que viuen solos",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-10",
@@ -95,7 +95,7 @@
         },
         {
           "id": "1-2-11",
-          "title": "global_indicators.1-2-11-title",
+          "title": "Llars familiars formades exclusivament per persones de 65 o més anys",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-11",
@@ -103,7 +103,7 @@
         },
         {
           "id": "1-2-12",
-          "title": "global_indicators.1-2-12-title",
+          "title": "Percentatge de població que viu en seccions censals vulnerables a nivell socioeconòmic",
           "description": "",
           "keywords": "",
           "href": "/site/1-2-12",
@@ -111,7 +111,7 @@
         },
         {
           "id": "1-a-1",
-          "title": "Proporció dels recursos generats a nivell intern que el govern assigna directament a programes de reducció de la pobresa",
+          "title": "Pressupost municipal destinat a Cooperació ODS1",
           "description": "",
           "keywords": "",
           "href": "/site/1-a-1",
@@ -119,7 +119,7 @@
         },
         {
           "id": "1-a-2",
-          "title": "Proporció de la despesa pública total que es dedica a serveis essencials (educació, salut i protecció social)",
+          "title": "Pressupost municipal destinat a Educació per al desenvolupament ODS1",
           "description": "",
           "keywords": "",
           "href": "/site/1-a-2",
@@ -127,7 +127,7 @@
         },
         {
           "id": "1-a-3",
-          "title": "Suma del total de les subvencions i assignacions no generadores de deute dedicades directament a programes de reducció de la pobresa en proporció al PIB",
+          "title": "Pressupost municipal destinat a Accions Humanitàries ODS1",
           "description": "",
           "keywords": "",
           "href": "/site/1-a-3",
@@ -135,7 +135,7 @@
         },
         {
           "id": "1-a-4",
-          "title": "global_indicators.1-a-4-title",
+          "title": "Pressupost municipal destinat a Ajuda a Països en Desenvolupament",
           "description": "",
           "keywords": "",
           "href": "/site/1-a-4",
