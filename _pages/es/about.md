@@ -1,5 +1,5 @@
 ---
-title: About
+title: Información
 permalink: /es/about/
 layout: page
 language: es
