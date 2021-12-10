@@ -19,8 +19,8 @@ breadcrumbs:
   post:
     - path: /
       label: general.home
-    - path: /news
-      label: menu.updates
+    #- path: /news
+    #  label: menu.updates
 contrast_type: default
 cookie_consent_form:
   enabled: false
