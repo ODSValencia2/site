@@ -12,5 +12,4 @@ reutilitzable possible. És un exercici de transparència que ha de permetre fer
 avaluació del grau d’assoliment dels Objectius de Desenvolupament Sostenible a la ciutat de València.
 
 Pot trobar més informació sobre els Objectius de Desenvolupament Sostenible a la ciutat de València al web 
-de l'[Oficina d'Estadística de l'Ajuntament de València]
-(https://www.valencia.es/cas/estadistica/ods_principal).
+de l'[Oficina d'Estadística de l'Ajuntament de València](https://www.valencia.es/cas/estadistica/ods_principal).
