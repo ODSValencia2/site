@@ -1,6 +1,6 @@
 ---
 title: Informació
-permalink: /ca/about/
+permalink: /about/
 layout: page
 language: ca
 ---
