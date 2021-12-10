@@ -6,14 +6,6 @@
       "indicators": [
         
         {
-          "id": "1-1-1",
-          "title": "Proporció de la població que viu per sota del llindar internacional de pobresa, desglossada per sexe, edat, situació laboral i ubicació geogràfica (urbana o rural)",
-          "description": "",
-          "keywords": "",
-          "href": "/site/1-1-1",
-          "status": "notstarted"
-        },
-        {
           "id": "1-2-1",
           "title": "Població en risc de pobresa relativa considerant el llindar autonòmic de pobresa",
           "description": "",
