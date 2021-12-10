@@ -100,11 +100,11 @@ frontpage_cards:
   - title: frontpage.info
     content: ''
     include: ''
-    button_label: frontpage.enlace_ods
-    button_link: 'https://www.valencia.es/cas/estadistica/ods_principal'
+    #button_label: frontpage.enlace_ods
+    #button_link: 'https://www.valencia.es/cas/estadistica/ods_principal'
     rule_color: ''
-   # content: |
-   #   [frontpage.enlace_ods](https://www.valencia.es/cas/estadistica/ods_principal)
+    content: |
+      [Web Oficina d'Estadística de l'Ajuntament de València](https://www.valencia.es/cas/estadistica/ods_principal)
 frontpage_goals_grid:
   title: frontpage.title
   description: frontpage.instructions
