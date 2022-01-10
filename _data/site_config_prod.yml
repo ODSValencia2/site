@@ -12,6 +12,7 @@
 # Whereas site_config.yml can be produced using the site configuration
 # form, we recommend you manually edit this file directly.
 #
+#
 # See also _config_prod.yml in the root of this repository.
 
 environment: production
