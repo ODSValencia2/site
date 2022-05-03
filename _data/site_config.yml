@@ -162,13 +162,13 @@ map_layers:
     # The label to use in the "Download GeoJSON" button:
     label: Distritos
     # The minimum zoom at which this layer should be visible.
-    min_zoom: 0
+    min_zoom: 5
     # The maximum zoom at which this layer should be visible.
     max_zoom: 20
     # Whether or not these boundaries should display statically on lower layers.
     staticBorders: true
 map_options:
-  minZoom: 5
+  minZoom: 6
   maxZoom: 20
   tileURL: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
   tileOptions:
@@ -193,25 +193,27 @@ map_options:
                ["#EEF9EA", "#CCECBF", "#ABE095", "#89D36B", "#67C640", "#56C02B", "#459A22", "#34731A", "#224D11", "#112609"],
                ["#E6F0F5", "#B3D2E2", "#80B4CE", "#4D95BA", "#1A77A7", "#00689D", "#00537E", "#003E5E", "#002A3F", "#00151F"],
                ["#E8EDF0", "#BAC8D2", "#8CA4B5", "#5E7F97", "#305A79", "#19486A", "#143A55", "#0F2B40", "#0A1D2A", "#050E15"]]
-  #noValueColor: '#f0f0f0'
-  #styleNormal:
-  #  weight: 1
-  #  opacity: 1
-  #  fillOpacity: 0.7
+  noValueColor: '#f0f0f0'
+  styleNormal:
+    weight: 1
+    opacity: 1
+    fillOpacity: 0.7
   #  color: '#888888'
+    color: '#888'
   #  dashArray: ''
-  #styleHighlighted:
-  #  weight: 1
-  #  opacity: 1
-  #  fillOpacity: 0.7
+  styleHighlighted:
+    weight: 1
+    opacity: 1
+    fillOpacity: 0.7
   #  color: '#111111'
+    color: '#111'
   #  dashArray: ''
-  #styleStatic:
-  #  weight: 2
-  #  opacity: 1
-  #  fillOpacity: 0
-  #  color: '#172d44'
-  #  dashArray: '5,5'
+  styleStatic:
+    weight: 2
+    opacity: 1
+    fillOpacity: 0
+    color: '#172d44'
+    dashArray: '5,5'
 menu:
   - path: /goals
     translation_key: general.goals
