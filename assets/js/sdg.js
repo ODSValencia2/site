@@ -82,7 +82,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     min_zoom: 0,
     max_zoom: 10,
     subfolder: 'regions',
-    label: 'indicator.map',
+    label: 'Distritos',
     staticBorders: false,
   };
 
