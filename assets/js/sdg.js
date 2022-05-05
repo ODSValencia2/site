@@ -1100,7 +1100,7 @@ event.prototype = {
   return this.colors;
 
 };
-#//Last check: 17.09.2021
+//Last check: 17.09.2021
 var indicatorModel = function (options) {
 
   var helpers = 
@@ -2902,7 +2902,7 @@ var mapView = function () {
     });
   };
 };
-#var indicatorView = function (model, options) {
+var indicatorView = function (model, options) {
 
   "use strict";
 
