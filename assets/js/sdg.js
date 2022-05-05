@@ -1,4 +1,4 @@
-/**
+#/**
  * This function returns a javascript object containing autotrack.js properties.
  *
  * These properties can be added to an element with jQuery: $(element).attr(props)
@@ -29,7 +29,7 @@ opensdg.autotrack = function(preset, category, action, label) {
 
   return obj;
 };
-//Last check: 17.09.2021
+#//Last check: 17.09.2021
 /**
  * TODO:
  * Integrate with high-contrast switcher.
@@ -636,7 +636,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     });
   };
 })(jQuery);
-Chart.plugins.register({
+#Chart.plugins.register({
   id: 'rescaler',
   beforeInit: function (chart, options) {
     chart.config.data.allLabels = chart.config.data.labels.slice(0);
@@ -685,7 +685,7 @@ Chart.plugins.register({
     }
   }
 });
-function getTextLinesOnCanvas(ctx, text, maxWidth) {
+#function getTextLinesOnCanvas(ctx, text, maxWidth) {
   var words = text.split(" ");
   var lines = [];
   var currentLine = words[0];
@@ -742,7 +742,8 @@ Chart.plugins.register({
     }
   }
 });
-// This plugin allows users to cycle through tooltips by keyboard.
+#
+#// This plugin allows users to cycle through tooltips by keyboard.
 Chart.plugins.register({
     afterInit: function(chart) {
         var plugin = this;
@@ -894,7 +895,8 @@ Chart.plugins.register({
         }
     }
 });
-function event(sender) {
+#
+#function event(sender) {
   this._sender = sender;
   this._listeners = [];
 }
@@ -911,7 +913,7 @@ event.prototype = {
     }
   }
 };
-var accessibilitySwitcher = function() {
+#var accessibilitySwitcher = function() {
 
   var contrastIdentifiers = ['default', 'high'],
       contrastType = "default" || "default",
@@ -1061,7 +1063,7 @@ var accessibilitySwitcher = function() {
   };
 
 };
-opensdg.chartColors = function(indicatorId) {
+#opensdg.chartColors = function(indicatorId) {
   var colorSet = "accessible";
   var numberOfColors = 0;
   var customColorList = [];
@@ -1098,7 +1100,7 @@ opensdg.chartColors = function(indicatorId) {
   return this.colors;
 
 };
-//Last check: 17.09.2021
+#//Last check: 17.09.2021
 var indicatorModel = function (options) {
 
   var helpers = 
@@ -2900,7 +2902,7 @@ var mapView = function () {
     });
   };
 };
-var indicatorView = function (model, options) {
+#var indicatorView = function (model, options) {
 
   "use strict";
 
@@ -3957,7 +3959,7 @@ var indicatorView = function (model, options) {
     .appendTo(fieldGroupElement.find('#indicatorData .variable-options'));
   }
 };
-// @deprecated start
+#// @deprecated start
 // Some backwards compatibiliy code after Lodash migration.
 _.findWhere = _.find;
 // @deprecated end
@@ -3972,7 +3974,7 @@ indicatorController.prototype = {
     this._model.initialise();
   }
 };
-$(document).ready(function() {
+#$(document).ready(function() {
     $('.nav-tabs').each(function() {
         var tabsList = $(this);
 
@@ -3984,7 +3986,8 @@ $(document).ready(function() {
         });
     });
 });
-$(document).ready(function() {
+#
+#$(document).ready(function() {
     $('.nav-tabs').each(function() {
         var tabsList = $(this);
         var tabs = tabsList.find('li > a');
@@ -4081,7 +4084,8 @@ $(document).ready(function() {
         });
     });
 });
-var indicatorSearch = function() {
+#
+#var indicatorSearch = function() {
 
   function sanitizeInput(input) {
     if (input === null) {
@@ -4296,7 +4300,7 @@ $(function() {
 
   indicatorSearch();
 });
-$(function() {
+#$(function() {
 
   // @deprecated start
   if (typeof translations.search === 'undefined') {
@@ -4406,8 +4410,8 @@ $(function() {
   // Add the cookie settings link in the footer.
   
 });
-/*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js */
-"document"in self&&("classList"in document.createElement("_")&&(!document.createElementNS||"classList"in document.createElementNS("http://www.w3.org/2000/svg","g"))||!function(t){"use strict";if("Element"in t){var e="classList",n="prototype",i=t.Element[n],s=Object,r=String[n].trim||function(){return this.replace(/^\s+|\s+$/g,"")},o=Array[n].indexOf||function(t){for(var e=0,n=this.length;n>e;e++)if(e in this&&this[e]===t)return e;return-1},a=function(t,e){this.name=t,this.code=DOMException[t],this.message=e},c=function(t,e){if(""===e)throw new a("SYNTAX_ERR","An invalid or illegal string was specified");if(/\s/.test(e))throw new a("INVALID_CHARACTER_ERR","String contains an invalid character");return o.call(t,e)},l=function(t){for(var e=r.call(t.getAttribute("class")||""),n=e?e.split(/\s+/):[],i=0,s=n.length;s>i;i++)this.push(n[i]);this._updateClassName=function(){t.setAttribute("class",""+this)}},u=l[n]=[],h=function(){return new l(this)};if(a[n]=Error[n],u.item=function(t){return this[t]||null},u.contains=function(t){return t+="",-1!==c(this,t)},u.add=function(){var t,e=arguments,n=0,i=e.length,s=!1;do t=e[n]+"",-1===c(this,t)&&(this.push(t),s=!0);while(++n<i);s&&this._updateClassName()},u.remove=function(){var t,e,n=arguments,i=0,s=n.length,r=!1;do for(t=n[i]+"",e=c(this,t);-1!==e;)this.splice(e,1),r=!0,e=c(this,t);while(++i<s);r&&this._updateClassName()},u.toggle=function(t,e){t+="";var n=this.contains(t),i=n?e!==!0&&"remove":e!==!1&&"add";return i&&this[i](t),e===!0||e===!1?e:!n},u.toString=function(){return this.join(" ")},s.defineProperty){var f={get:h,enumerable:!0,configurable:!0};try{s.defineProperty(i,e,f)}catch(g){(void 0===g.number||-2146823252===g.number)&&(f.enumerable=!1,s.defineProperty(i,e,f))}}else s[n].__defineGetter__&&i.__defineGetter__(e,h)}}(self),function(){"use strict";var t=document.createElement("_");if(t.classList.add("c1","c2"),!t.classList.contains("c2")){var e=function(t){var e=DOMTokenList.prototype[t];DOMTokenList.prototype[t]=function(t){var n,i=arguments.length;for(n=0;i>n;n++)t=arguments[n],e.call(this,t)}};e("add"),e("remove")}if(t.classList.toggle("c3",!1),t.classList.contains("c3")){var n=DOMTokenList.prototype.toggle;DOMTokenList.prototype.toggle=function(t,e){return 1 in arguments&&!this.contains(t)==!e?e:n.call(this,t)}}t=null}());/*! modernizr 3.5.0 (Custom Build) | MIT *
+#/*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js */
+"document"in self&&("classList"in document.createElement("_")&&(!document.createElementNS||"classList"in document.createElementNS("http://www.w3.org/2000/svg","g"))||!function(t){"use strict";if("Element"in t){var e="classList",n="prototype",i=t.Element[n],s=Object,r=String[n].trim||function(){return this.replace(/^\s+|\s+$/g,"")},o=Array[n].indexOf||function(t){for(var e=0,n=this.length;n>e;e++)if(e in this&&this[e]===t)return e;return-1},a=function(t,e){this.name=t,this.code=DOMException[t],this.message=e},c=function(t,e){if(""===e)throw new a("SYNTAX_ERR","An invalid or illegal string was specified");if(/\s/.test(e))throw new a("INVALID_CHARACTER_ERR","String contains an invalid character");return o.call(t,e)},l=function(t){for(var e=r.call(t.getAttribute("class")||""),n=e?e.split(/\s+/):[],i=0,s=n.length;s>i;i++)this.push(n[i]);this._updateClassName=function(){t.setAttribute("class",""+this)}},u=l[n]=[],h=function(){return new l(this)};if(a[n]=Error[n],u.item=function(t){return this[t]||null},u.contains=function(t){return t+="",-1!==c(this,t)},u.add=function(){var t,e=arguments,n=0,i=e.length,s=!1;do t=e[n]+"",-1===c(this,t)&&(this.push(t),s=!0);while(++n<i);s&&this._updateClassName()},u.remove=function(){var t,e,n=arguments,i=0,s=n.length,r=!1;do for(t=n[i]+"",e=c(this,t);-1!==e;)this.splice(e,1),r=!0,e=c(this,t);while(++i<s);r&&this._updateClassName()},u.toggle=function(t,e){t+="";var n=this.contains(t),i=n?e!==!0&&"remove":e!==!1&&"add";return i&&this[i](t),e===!0||e===!1?e:!n},u.toString=function(){return this.join(" ")},s.defineProperty){var f={get:h,enumerable:!0,configurable:!0};try{s.defineProperty(i,e,f)}catch(g){(void 0===g.number||-2146823252===g.number)&&(f.enumerable=!1,s.defineProperty(i,e,f))}}else s[n].__defineGetter__&&i.__defineGetter__(e,h)}}(self),function(){"use strict";var t=document.createElement("_");if(t.classList.add("c1","c2"),!t.classList.contains("c2")){var e=function(t){var e=DOMTokenList.prototype[t];DOMTokenList.prototype[t]=function(t){var n,i=arguments.length;for(n=0;i>n;n++)t=arguments[n],e.call(this,t)}};e("add"),e("remove")}if(t.classList.toggle("c3",!1),t.classList.contains("c3")){var n=DOMTokenList.prototype.toggle;DOMTokenList.prototype.toggle=function(t,e){return 1 in arguments&&!this.contains(t)==!e?e:n.call(this,t)}}t=null}());#/*! modernizr 3.5.0 (Custom Build) | MIT *
  * https://modernizr.com/download/?-blobconstructor-localstorage-setclasses !*/
  !function(e,n,o){function s(e,n){return typeof e===n}function t(){var e,n,o,t,a,l,c;for(var f in i)if(i.hasOwnProperty(f)){if(e=[],n=i[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(o=0;o<n.options.aliases.length;o++)e.push(n.options.aliases[o].toLowerCase());for(t=s(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)l=e[a],c=l.split("."),1===c.length?Modernizr[c[0]]=t:(!Modernizr[c[0]]||Modernizr[c[0]]instanceof Boolean||(Modernizr[c[0]]=new Boolean(Modernizr[c[0]])),Modernizr[c[0]][c[1]]=t),r.push((t?"":"no-")+c.join("-"))}}function a(e){var n=c.className,o=Modernizr._config.classPrefix||"";if(f&&(n=n.baseVal),Modernizr._config.enableJSClass){var s=new RegExp("(^|\\s)"+o+"no-js(\\s|$)");n=n.replace(s,"$1"+o+"js$2")}Modernizr._config.enableClasses&&(n+=" "+o+e.join(" "+o),f?c.className.baseVal=n:c.className=n)}var r=[],i=[],l={_version:"3.5.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var o=this;setTimeout(function(){n(o[e])},0)},addTest:function(e,n,o){i.push({name:e,fn:n,options:o})},addAsyncTest:function(e){i.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr,Modernizr.addTest("blobconstructor",function(){try{return!!new Blob}catch(e){return!1}},{aliases:["blob-constructor"]}),Modernizr.addTest("localstorage",function(){var e="modernizr";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(n){return!1}});var c=n.documentElement,f="svg"===c.nodeName.toLowerCase();t(),a(r),delete l.addTest,delete l.addAsyncTest;for(var u=0;u<Modernizr._q.length;u++)Modernizr._q[u]();e.Modernizr=Modernizr}(window,document);/*
  * Leaflet selection legend.
@@ -4869,6 +4873,6 @@ $(function() {
     }
   });
 }());
-$(document).ready(function() {
+#$(document).ready(function() {
     $('a[href="#top"]').prepend('<i class="fa fa-arrow-up"></i>');
 });
