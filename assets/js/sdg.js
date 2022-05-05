@@ -2,7 +2,7 @@
 # Don't delete this line.
 ---
 #{%- include assets/js/autotrack-element.js -%}
-#{%- include assets/js/plugins/jquery.sdgMap.js -%}
+{%- include assets/js/plugins/jquery.sdgMap.js -%}
 #{%- include assets/js/chartjs/rescaler.js -%}
 #{%- include assets/js/chartjs/noDataMessage.js -%}
 #{% if site.accessible_charts %}
