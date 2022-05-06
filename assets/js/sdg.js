@@ -29,7 +29,6 @@ opensdg.autotrack = function(preset, category, action, label) {
 
   return obj;
 };
-//Last check: 17.09.2021
 /**
  * TODO:
  * Integrate with high-contrast switcher.
@@ -82,7 +81,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     min_zoom: 0,
     max_zoom: 10,
     subfolder: 'regions',
-    label: 'Distritos',
+    label: 'indicator.map',
     staticBorders: false,
   };
 
@@ -328,7 +327,6 @@ opensdg.autotrack = function(preset, category, action, label) {
       var minimumValues = [],
           maximumValues = [],
           availableYears = [];
-          avaialbleValues = [];
 
       // At this point we need to load the GeoJSON layer/s.
       var geoURLs = this.mapLayers.map(function(item) {
@@ -420,29 +418,24 @@ opensdg.autotrack = function(preset, category, action, label) {
           $(plugin.element).parent().append(downloadButton);
 
           // Keep track of the minimums and maximums.
-          console.log("features: ", geoJson.features);
           _.each(geoJson.features, function(feature) {
-            if (feature.properties.values && feature.properties.values.length) {
-              availableYears = availableYears.concat(Object.keys(feature.properties.values[0]));
-              for (var year in feature.properties.values[0]){
-                if (! _.isNaN(feature.properties.values[0][year]) && feature.properties.values[0][year]!="") {
-                  //availableYears.concat(year);
-                  avaialbleValues.push(feature.properties.values[0][year]);
-                }
-              };
-              // _.each(feature.properties.values[0], function(year){
-              //   if (!_.isNaN(year.values(year))) {
-              //     availableYears.concat(Object.key(year));
-              //     avaialbleValues.push(Object.values(year));
-              //   }
-              // });
-              minimumValues.push(_.min(avaialbleValues));
-              maximumValues.push(_.max(avaialbleValues));
+            if (feature.properties.values && feature.properties.values.length > 0) {
+              var validEntries = _.reject(Object.entries(feature.properties.values[0]), function(entry) {
+                return isMapValueInvalid(entry[1]);
+              });
+              if (validEntries.length > 0) {
+                var validKeys = validEntries.map(function(entry) {
+                  return entry[0];
+                });
+                var validValues = validEntries.map(function(entry) {
+                  return entry[1];
+                })
+                availableYears = availableYears.concat(validKeys);
+                minimumValues.push(_.min(validValues));
+                maximumValues.push(_.max(validValues));
+              }
             }
           });
-          console.log("minArray: ", minimumValues);
-          console.log("Values: ", avaialbleValues);
-          console.log("Years: ", availableYears);
         }
 
         // Calculate the ranges of values, years and colors.
@@ -575,8 +568,16 @@ opensdg.autotrack = function(preset, category, action, label) {
         }
       });
 
-      // Perform some last-minute tasks when the user clicks on the "Map" tab.
-      $('.map .nav-link').click(function() {
+      // Certain things cannot be done until the map is visible. Because our
+      // map is in a tab which might not be visible, we have to postpone those
+      // things until it becomes visible.
+      if ($('#map').is(':visible')) {
+        finalMapPreparation();
+      }
+      else {
+        $('#tab-mapview').parent().click(finalMapPreparation);
+      }
+      function finalMapPreparation() {
         setTimeout(function() {
           $('#map #loader-container').hide();
           // Leaflet needs "invalidateSize()" if it was originally rendered in a
@@ -604,7 +605,7 @@ opensdg.autotrack = function(preset, category, action, label) {
             $('#map').height(maxHeight);
           }
         }, 500);
-      });
+      };
     },
 
     featureShouldDisplay: function(feature) {
@@ -1100,7 +1101,6 @@ event.prototype = {
   return this.colors;
 
 };
-//Last check: 17.09.2021
 var indicatorModel = function (options) {
 
   var helpers = 
@@ -1984,6 +1984,25 @@ function getChartTitle(currentTitle, allTitles, selectedUnit, selectedSeries) {
 }
 
 /**
+ * @param {string} currentType
+ * @param {Array} allTypes Objects containing 'unit', 'series', and 'type'
+ * @param {String} selectedUnit
+ * @param {String} selectedSeries
+ * @param {Boolean} chartjs3
+ * @return {String} Updated type
+ */
+function getChartType(currentType, allTypes, selectedUnit, selectedSeries, chartjs3) {
+  if (!chartjs3) {
+    return currentType;
+  }
+  if (!currentType) {
+    currentType = 'line';
+  }
+  var match = getMatchByUnitSeries(allTypes, selectedUnit, selectedSeries);
+  return (match) ? match.type : currentType;
+}
+
+/**
  * @param {Array} graphLimits Objects containing 'unit' and 'title'
  * @param {String} selectedUnit
  * @param {String} selectedSeries
@@ -2050,8 +2069,9 @@ function getGraphSeriesBreaks(graphSeriesBreaks, selectedUnit, selectedSeries) {
  * @param {Array} colorAssignments Color/striping assignments for disaggregation combinations
  * @return {Array} Datasets suitable for Chart.js
  */
-function getDatasets(headline, data, combinations, years, defaultLabel, colors, selectableFields, colorAssignments) {
-  var datasets = [], index = 0, dataset, colorIndex, color, background, border, striped, excess, combinationKey, colorAssignment;
+function getDatasets(headline, data, combinations, years, defaultLabel, colors, selectableFields, colorAssignments, showLine, spanGaps) {
+  //console.log("combinations: ", combinations)
+  var datasets = [], index = 0, dataset, colorIndex, color, background, border, striped, excess, combinationKey, colorAssignment, showLine, spanGaps;
   var numColors = colors.length,
       maxColorAssignments = numColors * 2;
 
@@ -2091,14 +2111,14 @@ function getDatasets(headline, data, combinations, years, defaultLabel, colors, 
       background = getBackground(color, striped);
       border = getBorderDash(striped);
 
-      dataset = makeDataset(years, filteredData, combination, defaultLabel, color, background, border, excess);
+      dataset = makeDataset(years, filteredData, combination, defaultLabel, color, background, border, excess, showLine, spanGaps);
       datasets.push(dataset);
       index++;
     }
   }, this);
 
   if (headline.length > 0) {
-    dataset = makeHeadlineDataset(years, headline, defaultLabel);
+    dataset = makeHeadlineDataset(years, headline, defaultLabel, showLine, spanGaps);
     datasets.unshift(dataset);
   }
   return datasets;
@@ -2281,7 +2301,7 @@ function getBorderDash(striped) {
  * @param {Array} border
  * @return {Object} Dataset object for Chart.js
  */
-function makeDataset(years, rows, combination, labelFallback, color, background, border, excess) {
+function makeDataset(years, rows, combination, labelFallback, color, background, border, excess, showLine, spanGaps) {
   var dataset = getBaseDataset();
   return Object.assign(dataset, {
     label: getCombinationDescription(combination, labelFallback),
@@ -2296,6 +2316,8 @@ function makeDataset(years, rows, combination, labelFallback, color, background,
     pointStyle: 'circle',
     data: prepareDataForDataset(years, rows),
     excess: excess,
+    spanGaps: spanGaps,
+    showLine: showLine,
   });
 }
 
@@ -2308,7 +2330,9 @@ function getBaseDataset() {
     pointHoverRadius: 5,
     pointHoverBorderWidth: 1,
     tension: 0,
-    spanGaps: true
+    spanGaps: true,
+    showLine: true,
+    maxBarThickness: 150,
   });
 }
 
@@ -2356,7 +2380,7 @@ function getHeadlineColor() {
  * @param {string} label
  * @return {Object} Dataset object for Chart.js
  */
-function makeHeadlineDataset(years, rows, label) {
+function makeHeadlineDataset(years, rows, label, showLine, spanGaps) {
   var dataset = getBaseDataset();
   return Object.assign(dataset, {
     label: label,
@@ -2365,10 +2389,22 @@ function makeHeadlineDataset(years, rows, label) {
     pointBorderColor: getHeadlineColor(),
     pointBackgroundColor: getHeadlineColor(),
     borderWidth: 4,
-    headline: true,
-    pointStyle: 'rect',
+    headline: false,
+    pointStyle: 'circle',
     data: prepareDataForDataset(years, rows),
+    showLine: showLine,
+    spanGaps: spanGaps,
   });
+}
+
+  /**
+   * @param {Array} graphStepsize Objects containing 'unit' and 'title'
+   * @param {String} selectedUnit
+   * @param {String} selectedSeries
+   */
+  function getGraphStepsize(graphStepsize, selectedUnit, selectedSeries) {
+    return getMatchByUnitSeries(graphStepsize, selectedUnit, selectedSeries);
+
 }
 
   /**
@@ -2503,6 +2539,7 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
     VALUE_COLUMN: VALUE_COLUMN,
     SERIES_TOGGLE: SERIES_TOGGLE,
     GRAPH_TITLE_FROM_SERIES: GRAPH_TITLE_FROM_SERIES,
+    CHARTJS_3: CHARTJS_3,
     convertJsonFormatToRows: convertJsonFormatToRows,
     getUniqueValuesByProperty: getUniqueValuesByProperty,
     dataHasUnits: dataHasUnits,
@@ -2534,6 +2571,7 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
     getUpdatedFieldItemStates: getUpdatedFieldItemStates,
     fieldItemStatesForView: fieldItemStatesForView,
     getChartTitle: getChartTitle,
+    getChartType: getChartType,
     getCombinationData: getCombinationData,
     getDatasets: getDatasets,
     tableDataFromDatasets: tableDataFromDatasets,
@@ -2543,6 +2581,10 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
     getGraphLimits: getGraphLimits,
     getGraphAnnotations: getGraphAnnotations,
     getColumnsFromData: getColumnsFromData,
+    getGraphStepsize: getGraphStepsize,
+    inputEdges: inputEdges,
+    getTimeSeriesAttributes: getTimeSeriesAttributes,
+    inputData: inputData,
     // Backwards compatibility.
     footerFields: deprecated('helpers.footerFields'),
   }
@@ -2562,8 +2604,8 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
 
   // general members:
   var that = this;
-  this.data = helpers.convertJsonFormatToRows(options.data);
-  this.edgesData = helpers.convertJsonFormatToRows(options.edgesData);
+  this.data = helpers.inputData(options.data);
+  this.edgesData = helpers.inputEdges(options.edgesData);
   this.hasHeadline = true;
   this.country = options.country;
   this.indicatorId = options.indicatorId;
@@ -2571,6 +2613,7 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
   this.chartTitle = options.chartTitle,
   this.chartTitles = options.chartTitles;
   this.graphType = options.graphType;
+  this.graphTypes = options.graphTypes;
   this.measurementUnit = options.measurementUnit;
 //  this.xAxisLabel = options.xAxisLabel;
   this.startValues = options.startValues;
@@ -2680,6 +2723,10 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
 
   this.updateChartTitle = function() {
     this.chartTitle = helpers.getChartTitle(this.chartTitle, this.chartTitles, this.selectedUnit, this.selectedSeries);
+  }
+
+  this.updateChartType = function() {
+    this.graphType = helpers.getChartType(this.graphType, this.graphTypes, this.selectedUnit, this.selectedSeries, helpers.CHARTJS_3);
   }
 
   this.updateSelectedUnit = function(selectedUnit) {
@@ -2832,6 +2879,14 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
       filteredData = helpers.getDataByUnit(filteredData, this.selectedUnit);
     }
 
+    var timeSeriesAttributes = [];
+    if (filteredData.length > 0) {
+      timeSeriesAttributes = helpers.getTimeSeriesAttributes(filteredData);
+    }
+    else if (headline.length > 0) {
+      timeSeriesAttributes = helpers.getTimeSeriesAttributes(headline);
+    }
+
     filteredData = helpers.sortData(filteredData, this.selectedUnit);
     if (headline.length > 0) {
       headline = helpers.sortData(headline, this.selectedUnit);
@@ -2848,6 +2903,7 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
     }
 
     this.updateChartTitle();
+    this.updateChartType();
 
     this.onFieldsStatusUpdated.notify({
       data: this.fieldItemStates,
@@ -2869,9 +2925,11 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
       stackedDisaggregation: this.stackedDisaggregation,
       graphAnnotations: helpers.getGraphAnnotations(this.graphAnnotations, this.selectedUnit, this.selectedSeries, this.graphTargetLines, this.graphSeriesBreaks),
       chartTitle: this.chartTitle,
+      chartType: this.graphType,
       indicatorDownloads: this.indicatorDownloads,
       precision: helpers.getPrecision(this.precision, this.selectedUnit, this.selectedSeries),
       graphStepsize: helpers.getGraphStepsize(this.graphStepsize, this.selectedUnit, this.selectedSeries),
+      timeSeriesAttributes: timeSeriesAttributes,
     });
   };
 };
@@ -2931,8 +2989,11 @@ var indicatorView = function (model, options) {
       }
     });
 
-    // Provide the hide/show functionality for the sidebar.
-    $('.data-view .nav-link').on('click', function(e) {
+    // Execute the hide/show functionality for the sidebar, both on
+    // the currently active tab, and each time a tab is clicked on.
+    $('.data-view .nav-item.active .nav-link').each(toggleSidebar);
+    $('.data-view .nav-link').on('click', toggleSidebar);
+    function toggleSidebar() {
       var $sidebar = $('.indicator-sidebar'),
           $main = $('.indicator-main'),
           hideSidebar = $(this).data('no-disagg'),
@@ -2951,7 +3012,7 @@ var indicatorView = function (model, options) {
         $sidebar.removeClass('indicator-sidebar-hidden');
         $main.removeClass('indicator-main-full');
       }
-    });
+    };
   });
 
   this._model.onDataComplete.attach(function (sender, args) {
@@ -2972,6 +3033,9 @@ var indicatorView = function (model, options) {
     view_obj.createSelectionsTable(args);
 
     view_obj.updateChartTitle(args.chartTitle.replace("<sub>","").replace("</sub>",""));
+    view_obj.updateSeriesAndUnitElements(args.selectedSeries, args.selectedUnit);
+    view_obj.updateUnitElements(args.selectedUnit);
+    view_obj.updateTimeSeriesAttributes(args.timeSeriesAttributes);
   });
 
   this._model.onFieldsComplete.attach(function(sender, args) {
@@ -3289,13 +3353,69 @@ var indicatorView = function (model, options) {
     }
   }
 
+  this.updateSeriesAndUnitElements = function(selectedSeries, selectedUnit) {
+    var hasSeries = typeof selectedSeries !== 'undefined',
+        hasUnit = typeof selectedUnit !== 'undefined',
+        hasBoth = hasSeries && hasUnit;
+    if (hasSeries || hasUnit || hasBoth) {
+      $('[data-for-series], [data-for-unit]').each(function() {
+        var elementSeries = $(this).data('for-series'),
+            elementUnit = $(this).data('for-unit'),
+            seriesMatches = elementSeries === selectedSeries,
+            unitMatches = elementUnit === selectedUnit;
+        if ((hasSeries || hasBoth) && !seriesMatches && elementSeries !== '') {
+          $(this).hide();
+        }
+        else if ((hasUnit || hasBoth) && !unitMatches && elementUnit !== '') {
+          $(this).hide();
+        }
+        else {
+          $(this).show();
+        }
+      });
+    }
+  }
+
+  this.updateUnitElements = function(selectedUnit) {
+    var hasUnit = typeof selectedUnit !== 'undefined';
+    var fallback = this._model.measurementUnit;
+    if (hasUnit || fallback) {
+        var unitToDisplay = selectedUnit || fallback;
+        $('.data-controlled-footer-field.unit-from-data').show();
+        $('dd.data-controlled-footer-field.unit-from-data').text(translations.t(unitToDisplay));
+    }
+    else {
+        $('.data-controlled-footer-field.unit-from-data').hide();
+    }
+  }
+
+  this.updateTimeSeriesAttributes = function(tsAttributeValues) {
+    var timeSeriesAttributes = null;
+    timeSeriesAttributes.forEach(function(tsAttribute) {
+      var field = tsAttribute.field,
+          valueMatch = tsAttributeValues.find(function(tsAttributeValue) {
+            return tsAttributeValue.field === field;
+          }),
+          value = (valueMatch) ? valueMatch.value : '',
+          $labelElement = $('dt[data-ts-attribute="' + field + '"]'),
+          $valueElement = $('dd[data-ts-attribute="' + field + '"]');
+
+      if (!value) {
+        $labelElement.hide();
+        $valueElement.hide();
+      }
+      else {
+        $labelElement.show();
+        $valueElement.show().text(translations.t(value));
+      }
+    });
+  }
+
   this.updatePlot = function(chartInfo) {
     this.updateIndicatorDataViewStatus(view_obj._chartInstance.data.datasets, chartInfo.datasets);
     view_obj._chartInstance.data.datasets = chartInfo.datasets;
     view_obj._chartInstance.data.labels = chartInfo.labels;
     this.updateHeadlineColor(this.isHighContrast() ? 'high' : 'default', view_obj._chartInstance);
-    // TODO: Investigate assets/js/chartjs/rescaler.js and why "allLabels" is needed.
-    view_obj._chartInstance.data.allLabels = chartInfo.labels;
 
     if(chartInfo.selectedUnit) {
       view_obj._chartInstance.options.scales.yAxes[0].scaleLabel.labelString = translations.t(chartInfo.selectedUnit);
@@ -3505,9 +3625,8 @@ var indicatorView = function (model, options) {
     $("#btnSave").click(function() {
       var filename = chartInfo.indicatorId + '.png',
           element = document.getElementById('chart-canvas'),
-          footer = document.getElementById('selectionChartFooter'),
-          height = element.clientHeight + 25 + ((footer) ? footer.clientHeight : 0),
-          width = element.clientWidth + 25;
+          height = element.clientHeight + 70,
+          width = element.clientWidth + 50;
       var options = {
         // These options fix the height, width, and position.
         height: height,
@@ -3518,13 +3637,14 @@ var indicatorView = function (model, options) {
         y: 0,
         scrollX: 0,
         scrollY: 0,
+        backgroundColor: view_obj.isHighContrast() ? '#000000' : '#FFFFFF',
         // Allow a chance to alter the screenshot's HTML.
-        onclone: function(clone) {
+        onclone: function (clone) {
           // Add a body class so that the screenshot style can be custom.
           clone.body.classList.add('image-download-in-progress');
         },
         // Decide which elements to skip.
-        ignoreElements: function(el) {
+        ignoreElements: function (el) {
           // Keep all style, head, and link elements.
           var keepTags = ['STYLE', 'HEAD', 'LINK'];
           if (keepTags.indexOf(el.tagName) !== -1) {
@@ -3540,9 +3660,9 @@ var indicatorView = function (model, options) {
         }
       };
       // First convert the target to a canvas.
-      html2canvas(element, options).then(function(canvas) {
+      html2canvas(element, options).then(function (canvas) {
         // Then download that canvas as a PNG file.
-        canvas.toBlob(function(blob) {
+        canvas.toBlob(function (blob) {
           saveAs(blob, filename);
         });
       });
@@ -4465,7 +4585,7 @@ $(function() {
           '<span class="arrow right"></span>' +
         '</div>';
 
-
+      
       var swatchTpl = '<span class="legend-swatch" style="width:{width}%; background:{color};"></span>';
       var swatchWidth = 100 / this.plugin.options.colorRange[this.plugin.goalNr].length;
       var swatches = this.plugin.options.colorRange[this.plugin.goalNr].map(function(swatchColor) { //[this.plugin.goalNr]
@@ -4503,8 +4623,6 @@ $(function() {
         '</li>';
       var plugin = this.plugin;
       var valueRange = this.plugin.valueRange;
-
-
       selectionList.innerHTML = this.selections.map(function(selection) {
         var value = plugin.getData(selection.feature.properties);
         var percentage, valueStatus;
@@ -4537,7 +4655,6 @@ $(function() {
     }
 
   });
-
 
   // Factory function for this class.
   L.Control.selectionLegend = function(plugin) {
